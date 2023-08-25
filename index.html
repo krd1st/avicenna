@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Avicenna Clinic</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -11,42 +11,46 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <section class="upper_header">
-      <div class="container">
-        <p class="upper_header-address">Адреса медичного закладу</p>
-        <ul class="upper_header-list list">
-          <li class="upper_header-item">+38 (050) 111 11 11</li>
-          <li class="upper_header-item">+38 (050) 111 11 11</li>
-          <li class="upper_header-item">+38 (050) 111 11 11</li>
-        </ul>
-      </div>
-    </section>
     <header class="header">
-      <div class="container">
-        <div class="header_logo">
-          <p class="header_logo-text">ЛОГОТИП</p>
+      <div class="header_up">
+        <div class="container">
+          <p class="header_up-address">Адреса медичного закладу</p>
+          <ul class="header_up-list list">
+            <li class="header_up-item">+38 (050) 111 11 11</li>
+            <li class="header_up-item">+38 (050) 111 11 11</li>
+            <li class="header_up-item">+38 (050) 111 11 11</li>
+          </ul>
         </div>
-        <ul class="header_list list">
-          <li class="header_item">
-            <a href="index.html" class="header_link link">Головна</a>
-          </li>
-          <li class="header_item">
-            <a href="about-us.html" class="header_link link">Про нас</a>
-          </li>
-          <li class="header_item">
-            <a href="" class="header_link link">Лікарі</a>
-          </li>
-          <li class="header_item">
-            <a href="" class="header_link link">Послуги</a>
-          </li>
-          <li class="header_item">
-            <a href="" class="header_link link">Ціни</a>
-          </li>
-        </ul>
-        <button class="header_button pointer">Записатися до лікаря</button>
+      </div>
+      <div class="header_down">
+        <div class="container">
+          <div class="header_down-logo">
+            <p class="header_down-logo-text">ЛОГОТИП</p>
+          </div>
+          <ul class="header_down-list list">
+            <li class="header_down-item">
+              <a href="index.html" class="header_down-link link">Головна</a>
+            </li>
+            <li class="header_down-item">
+              <a href="" class="header_down-link link">Про нас</a>
+            </li>
+            <li class="header_down-item">
+              <a href="" class="header_down-link link">Лікарі</a>
+            </li>
+            <li class="header_down-item">
+              <a href="" class="header_down-link link">Послуги</a>
+            </li>
+            <li class="header_down-item">
+              <a href="" class="header_down-link link">Ціни</a>
+            </li>
+          </ul>
+          <button class="header_down-button pointer">
+            Записатися до лікаря
+          </button>
+        </div>
       </div>
     </header>
     <section class="hero">
@@ -167,9 +171,81 @@
             <p class="doctors_text">Посада</p>
           </li>
         </ul>
+        <a href="" class="doctors_link link">Показати усіх лікарів -></a>
       </div>
     </section>
-    <section class="reviews"></section>
-    <footer class="footer"></footer>
+    <section class="reviews">
+      <div class="container">
+        <h2 class="reviews_title">Відгуки наших клієнтів</h2>
+        <ul class="reviews_list list">
+          <li class="reviews_item">
+            <div class="reviews_header">
+              <div class="reviews_image"></div>
+              <div class="reviews_wrap">
+                <p class="reviews_name">Ім'я Прізвище</p>
+                <p class="reviews_profession">Професія</p>
+              </div>
+            </div>
+            <div class="reviews_body">
+              <p class="reviews_text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+                eaque quasi harum, quaerat omnis odio iure repudiandae
+                blanditiis totam dolorum quibusdam, a nobis officia pariatur non
+                quo modi exercitationem aspernatur!
+              </p>
+            </div>
+          </li>
+          <li class="reviews_item">
+            <div class="reviews_header">
+              <div class="reviews_image"></div>
+              <div class="reviews_wrap">
+                <p class="reviews_name">Ім'я Прізвище</p>
+                <p class="reviews_profession">Професія</p>
+              </div>
+            </div>
+            <div class="reviews_body">
+              <p class="reviews_text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+                eaque quasi harum, quaerat omnis odio iure repudiandae
+                blanditiis totam dolorum quibusdam, a nobis officia pariatur non
+                quo modi exercitationem aspernatur!
+              </p>
+            </div>
+          </li>
+          <li class="reviews_item">
+            <div class="reviews_header">
+              <div class="reviews_image"></div>
+              <div class="review_wrap">
+                <p class="reviews_name">Ім'я Прізвище</p>
+                <p class="reviews_profession">Професія</p>
+              </div>
+            </div>
+            <div class="reviews_body">
+              <p class="reviews_text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+                eaque quasi harum, quaerat omnis odio iure repudiandae
+                blanditiis totam dolorum quibusdam, a nobis officia pariatur non
+                quo modi exercitationem aspernatur!
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="partners">
+      <div class="container">
+        <h2 class="partners_title">Наші партнери</h2>
+        <ul class="partners_list list">
+          <li class="partners_item"></li>
+          <li class="partners_item"></li>
+          <li class="partners_item"></li>
+        </ul>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <p class="footer_title">Додаткова інформація</p>
+      </div>
+    </footer>
   </body>
 </html>

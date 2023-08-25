@@ -1,0 +1,30 @@
+.about {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.about_title {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.about_wrap {
+  display: flex;
+  gap: 40px;
+}
+
+.about_image {
+  width: 540px;
+  height: 360px;
+  outline: 1px solid black;
+}
+
+.about_subtitle {
+  margin-bottom: 20px;
+}
+
+.about_text {
+  font-size: 18px;
+  line-height: 1.5;
+  width: 850px;
+}

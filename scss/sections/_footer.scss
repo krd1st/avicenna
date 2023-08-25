@@ -1,0 +1,16 @@
+.footer {
+  background-color: rgb(47, 45, 45);
+}
+
+.footer .container {
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer_title {
+  font-size: 32px;
+  font-weight: 700;
+  color: white;
+}
