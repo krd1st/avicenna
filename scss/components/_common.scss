@@ -17,3 +17,13 @@
 .address {
   font-style: normal;
 }
+
+::-webkit-scrollbar {
+  width: 5px;
+  &-thumb {
+    background-color: #acabab;
+    &:hover {
+        background-color: #555;
+    }
+  }
+}

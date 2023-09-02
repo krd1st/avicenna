@@ -15,60 +15,81 @@
   </head>
   <body>
     <header class="header">
-      <div class="header_up">
+      <div class="header-up">
         <div class="container">
-          <p class="header_up-address">Адреса медичного закладу</p>
-          <ul class="header_up-list list">
-            <li class="header_up-item">+38 (050) 111 11 11</li>
-            <li class="header_up-item">+38 (050) 111 11 11</li>
-            <li class="header_up-item">+38 (050) 111 11 11</li>
+          <a href="" class="header-up__address link"
+            >Адреса медичного закладу</a
+          >
+          <ul class="header-up__phonelist list">
+            <li class="header-up__phones_item">
+              <a href="tel:+380501111111" class="header-up__phone link"
+                >+380 (50) 111 11 11</a
+              >
+            </li>
+            <li class="header-up__phones_item">
+              <a href="tel:+380501111111" class="header-up__phone link"
+                >+380 (50) 111 11 11</a
+              >
+            </li>
+            <li class="header-up__phones_item">
+              <a href="tel:+380501111111" class="header-up__phone link"
+                >+380 (50) 111 11 11</a
+              >
+            </li>
           </ul>
         </div>
       </div>
-      <div class="header_down">
+      <div class="header-down">
         <div class="container">
-          <div class="header_down-logo">
-            <p class="header_down-logo-text">ЛОГОТИП</p>
-          </div>
-          <!-- <nav class="navigation"> -->
-          <ul class="header_down-list list">
-            <li class="header_down-item">
-              <a href="index.html" class="header_down-link link current"
+          <a href="./index.html" class="header-down__logo-link">
+            <img
+              class="header-down__logo"
+              src="./images/header-logo_2x.png"
+              alt="Фото клініки"
+              width="150"
+              height="50"
+            />
+          </a>
+          <ul class="header-down__list list">
+            <li class="header-down__item">
+              <a href="index.html" class="header-down__link link current"
                 >Головна</a
               >
             </li>
-            <li class="header_down-item">
-              <a href="about-clinic.html" class="header_down-link link"
+            <li class="header-down__item">
+              <a href="about-clinic.html" class="header-down__link link"
                 >Про клініку</a
               >
             </li>
-            <li class="header_down-item">
-              <a href="doctors.html" class="header_down-link link">Лікарі</a>
+            <li class="header-down__item">
+              <a href="doctors.html" class="header-down__link link">Лікарі</a>
             </li>
-            <li class="header_down-item">
-              <a href="gallery.html" class="header_down-link link">Галерея</a>
+            <li class="header-down__item">
+              <a href="gallery.html" class="header-down__link link">Галерея</a>
             </li>
-            <li class="header_down-item">
-              <a href="services.html" class="header_down-link link">Послуги</a>
+            <li class="header-down__item">
+              <a href="services.html" class="header-down__link link">Послуги</a>
+            </li>
+            <li class="header-down__item">
+              <a href="contacts.html" class="header-down__link link"
+                >Контакти</a
+              >
             </li>
           </ul>
-          <button class="header_down-button pointer">
-            Записатися до лікаря
-          </button>
-          <!-- </nav> -->
+          <button class="header-down__button pointer">Запис до лікаря</button>
         </div>
       </div>
     </header>
     <main>
-      <section class="hero">
+      <section class="hero hero__overlay">
         <div class="container">
-          <h1 class="hero_image">ФОНОВЕ ЗОБРАЖЕННЯ</h1>
+          <h1 class="hero__title">ГОЛОВНИЙ ЗАГОЛОВОК</h1>
         </div>
       </section>
-      <section class="about">
+      <section class="main-page__about">
         <div class="container">
-          <h2 class="about_title">Про нас</h2>
-          <div class="about_wrap">
+          <h2 class="main-page__title">Про нас</h2>
+          <div class="main-page__wrap">
             <picture>
               <source
                 srcset="
@@ -78,16 +99,16 @@
                 media="(min-width: 1440px)"
               />
               <img
-                class="about_image"
+                class="main-page__image"
                 src="./images/main-page/about_2x.jpg"
                 alt="Фото клініки"
                 width="1280"
                 height="720"
               />
             </picture>
-            <div class="about_info">
-              <h2 class="about_subtitle">Назва клініки</h2>
-              <p class="about_text">
+            <div class="main-page__info">
+              <h2 class="main-page__subtitle">Назва клініки</h2>
+              <p class="main-page__text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae,
                 amet voluptatem sint tenetur aut libero provident nostrum porro
                 excepturi illum et architecto inventore ipsum reprehenderit
@@ -109,11 +130,11 @@
           </div>
         </div>
       </section>
-      <section class="main-page_services">
+      <section class="main-page__services">
         <div class="container">
-          <h2 class="main-page_services_title">Наші послуги</h2>
-          <ul class="main-page_services_list list">
-            <li class="main-page_services_item">
+          <h2 class="main-page__services-title">Наші послуги</h2>
+          <ul class="main-page__services-list list">
+            <li class="main-page__services-item">
               <picture>
                 <source
                   srcset="
@@ -123,22 +144,22 @@
                   media="(min-width: 1440px)"
                 />
                 <img
-                  class="main-page_services_image"
+                  class="main-page__services-image"
                   src="./images/main-page/services_2x.jpg"
                   alt="Сервіс 1"
                   width="800"
                   height="600"
                 />
               </picture>
-              <h2 class="main-page_services_subtitle">Назва послуги</h2>
-              <p class="main-page_services_text">
+              <h2 class="main-page__services-subtitle">Назва послуги</h2>
+              <p class="main-page__services-text">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic,
                 voluptatibus tempora autem quas atque voluptates officia id!
                 Voluptatum autem quod provident est. Non nobis quasi magnam
                 laborum autem distinctio dolores!
               </p>
             </li>
-            <li class="main-page_services_item">
+            <li class="main-page__services-item">
               <picture>
                 <source
                   srcset="
@@ -148,22 +169,22 @@
                   media="(min-width: 1440px)"
                 />
                 <img
-                  class="main-page_services_image"
+                  class="main-page__services-image"
                   src="./images/main-page/services_2x.jpg"
                   alt="Сервіс 2"
                   width="800"
                   height="600"
                 />
               </picture>
-              <h2 class="main-page_services_subtitle">Назва послуги</h2>
-              <p class="main-page_services_text">
+              <h2 class="main-page__services-subtitle">Назва послуги</h2>
+              <p class="main-page__services-text">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic,
                 voluptatibus tempora autem quas atque voluptates officia id!
                 Voluptatum autem quod provident est. Non nobis quasi magnam
                 laborum autem distinctio dolores!
               </p>
             </li>
-            <li class="main-page_services_item">
+            <li class="main-page__services-item">
               <picture>
                 <source
                   srcset="
@@ -173,15 +194,15 @@
                   media="(min-width: 1440px)"
                 />
                 <img
-                  class="main-page_services_image"
+                  class="main-page__services-image"
                   src="./images/main-page/services_2x.jpg"
                   alt="Сервіс 3"
                   width="800"
                   height="600"
                 />
               </picture>
-              <h2 class="main-page_services_subtitle">Назва послуги</h2>
-              <p class="main-page_services_text">
+              <h2 class="main-page__services-subtitle">Назва послуги</h2>
+              <p class="main-page__services-text">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic,
                 voluptatibus tempora autem quas atque voluptates officia id!
                 Voluptatum autem quod provident est. Non nobis quasi magnam
@@ -189,21 +210,17 @@
               </p>
             </li>
           </ul>
-          <ul class="main-page_services_button_list list">
-            <li class="main-page_services_button_item">
-              <button class="main-page_services_button pointer"></button>
-            </li>
-            <li class="main-page_services_button_item">
-              <button class="main-page_services_button pointer"></button>
-            </li>
-          </ul>
+          <div class="main-page__services-buttons">
+            <button class="main-page__services-button pointer"></button>
+            <button class="main-page__services-button pointer"></button>
+          </div>
         </div>
       </section>
-      <section class="main-page_doctors">
+      <section class="main-page__doctors">
         <div class="container">
-          <h2 class="main-page_doctors_title">Наши лікарі</h2>
-          <ul class="main-page_doctors_list list">
-            <li class="main-page_doctors_item">
+          <h2 class="main-page__doctors-title">Наши лікарі</h2>
+          <ul class="main-page__doctors-list list">
+            <li class="main-page__doctors-item">
               <picture>
                 <source
                   srcset="
@@ -213,17 +230,17 @@
                   media="(min-width: 1440px)"
                 />
                 <img
-                  class="main-page_doctors_image"
+                  class="main-page__doctors-image"
                   src="./images/main-page/doctors_2x.jpg"
                   alt="Доктор"
                   width="600"
-                  height="800"
+                  height="600"
                 />
               </picture>
-              <h2 class="main-page_doctors_subtitle">Прізвище Ім'я</h2>
-              <p class="main-page_doctors_text">Посада</p>
+              <h2 class="main-page__doctors-subtitle">Прізвище Ім'я</h2>
+              <p class="main-page__doctors-text">Посада</p>
             </li>
-            <li class="main-page_doctors_item">
+            <li class="main-page__doctors-item">
               <picture>
                 <source
                   srcset="
@@ -233,17 +250,17 @@
                   media="(min-width: 1440px)"
                 />
                 <img
-                  class="main-page_doctors_image"
+                  class="main-page__doctors-image"
                   src="./images/main-page/doctors_2x.jpg"
                   alt="Доктор"
                   width="600"
-                  height="800"
+                  height="600"
                 />
               </picture>
-              <h2 class="main-page_doctors_subtitle">Прізвище Ім'я</h2>
-              <p class="main-page_doctors_text">Посада</p>
+              <h2 class="main-page__doctors-subtitle">Прізвище Ім'я</h2>
+              <p class="main-page__doctors-text">Посада</p>
             </li>
-            <li class="main-page_doctors_item">
+            <li class="main-page__doctors-item">
               <picture>
                 <source
                   srcset="
@@ -253,17 +270,17 @@
                   media="(min-width: 1440px)"
                 />
                 <img
-                  class="main-page_doctors_image"
+                  class="main-page__doctors-image"
                   src="./images/main-page/doctors_2x.jpg"
                   alt="Доктор"
                   width="600"
-                  height="800"
+                  height="600"
                 />
               </picture>
-              <h2 class="main-page_doctors_subtitle">Прізвище Ім'я</h2>
-              <p class="main-page_doctors_text">Посада</p>
+              <h2 class="main-page__doctors-subtitle">Прізвище Ім'я</h2>
+              <p class="main-page__doctors-text">Посада</p>
             </li>
-            <li class="main-page_doctors_item">
+            <li class="main-page__doctors-item">
               <picture>
                 <source
                   srcset="
@@ -273,36 +290,36 @@
                   media="(min-width: 1440px)"
                 />
                 <img
-                  class="main-page_doctors_image"
+                  class="main-page__doctors-image"
                   src="./images/main-page/doctors_2x.jpg"
                   alt="Доктор"
                   width="600"
                   height="800"
                 />
               </picture>
-              <h2 class="main-page_doctors_subtitle">Прізвище Ім'я</h2>
-              <p class="main-page_doctors_text">Посада</p>
+              <h2 class="main-page__doctors-subtitle">Прізвище Ім'я</h2>
+              <p class="main-page__doctors-text">Посада</p>
             </li>
           </ul>
-          <a href="doctors.html" class="main-page_doctors_link link"
+          <a href="doctors.html" class="main-page__doctors-link link"
             >Показати усіх лікарів -></a
           >
         </div>
       </section>
-      <section class="reviews">
+      <section class="main-page__reviews">
         <div class="container">
-          <h2 class="reviews_title">Відгуки наших клієнтів</h2>
-          <ul class="reviews_list list">
-            <li class="reviews_item">
-              <div class="reviews_header">
-                <div class="reviews_image"></div>
-                <div class="reviews_wrap">
-                  <p class="reviews_name">Ім'я Прізвище</p>
-                  <p class="reviews_profession">Професія</p>
+          <h2 class="main-page__reviews-title">Відгуки наших клієнтів</h2>
+          <ul class="main-page__reviews-list list">
+            <li class="main-page__reviews-item">
+              <div class="main-page__reviews-header">
+                <div class="main-page__reviews-image"></div>
+                <div class="main-page__reviews-wrap">
+                  <p class="main-page__reviews-name">Ім'я Прізвище</p>
+                  <p class="main-page__reviews-profession">Професія</p>
                 </div>
               </div>
-              <div class="reviews_body">
-                <p class="reviews_text">
+              <div class="main-page__reviews-body">
+                <p class="main-page__reviews-text">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Veniam eaque quasi harum, quaerat omnis odio iure repudiandae
                   blanditiis totam dolorum quibusdam, a nobis officia pariatur
@@ -310,16 +327,16 @@
                 </p>
               </div>
             </li>
-            <li class="reviews_item">
-              <div class="reviews_header">
-                <div class="reviews_image"></div>
-                <div class="reviews_wrap">
-                  <p class="reviews_name">Ім'я Прізвище</p>
-                  <p class="reviews_profession">Професія</p>
+            <li class="main-page__reviews-item">
+              <div class="main-page__reviews-header">
+                <div class="main-page__reviews-image"></div>
+                <div class="main-page__reviews-wrap">
+                  <p class="main-page__reviews-name">Ім'я Прізвище</p>
+                  <p class="main-page__reviews-profession">Професія</p>
                 </div>
               </div>
-              <div class="reviews_body">
-                <p class="reviews_text">
+              <div class="main-page__reviews-body">
+                <p class="main-page__reviews-text">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Veniam eaque quasi harum, quaerat omnis odio iure repudiandae
                   blanditiis totam dolorum quibusdam, a nobis officia pariatur
@@ -327,16 +344,16 @@
                 </p>
               </div>
             </li>
-            <li class="reviews_item">
-              <div class="reviews_header">
-                <div class="reviews_image"></div>
-                <div class="review_wrap">
-                  <p class="reviews_name">Ім'я Прізвище</p>
-                  <p class="reviews_profession">Професія</p>
+            <li class="main-page__reviews-item">
+              <div class="main-page__reviews-header">
+                <div class="main-page__reviews-image"></div>
+                <div class="main-page__reviews-wrap">
+                  <p class="main-page__reviews-name">Ім'я Прізвище</p>
+                  <p class="main-page__reviews-profession">Професія</p>
                 </div>
               </div>
-              <div class="reviews_body">
-                <p class="reviews_text">
+              <div class="main-page__reviews-body">
+                <p class="main-page__reviews-text">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Veniam eaque quasi harum, quaerat omnis odio iure repudiandae
                   blanditiis totam dolorum quibusdam, a nobis officia pariatur
@@ -347,20 +364,20 @@
           </ul>
         </div>
       </section>
-      <section class="partners">
+      <section class="main-page__partners">
         <div class="container">
-          <h2 class="partners_title">Наші партнери</h2>
-          <ul class="partners_list list">
-            <li class="partners_item"></li>
-            <li class="partners_item"></li>
-            <li class="partners_item"></li>
+          <h2 class="main-page__partners-title">Наші партнери</h2>
+          <ul class="main-page__partners-list list">
+            <li class="main-page__partners-item"></li>
+            <li class="main-page__partners-item"></li>
+            <li class="main-page__partners-item"></li>
           </ul>
         </div>
       </section>
     </main>
     <footer class="footer">
       <div class="container">
-        <p class="footer_title">Додаткова інформація</p>
+        <p class="footer__title">Додаткова інформація</p>
       </div>
     </footer>
   </body>

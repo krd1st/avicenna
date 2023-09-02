@@ -1,21 +1,21 @@
-.main-page_services {
-  background-color: rgb(147, 161, 228);
+.main-page__services {
+  background-color: rgb(195, 200, 224);
   padding-top: 80px;
   padding-bottom: 80px;
 }
 
-.main-page_services_title {
+.main-page__services-title {
   font-size: 32px;
   margin-bottom: 40px;
 }
 
-.main-page_services_list {
+.main-page__services-list {
   display: flex;
   gap: 30px;
   justify-content: space-between;
 }
 
-.main-page_services_item {
+.main-page__services-item {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -23,28 +23,31 @@
   width: 440px;
   height: 600px;
 
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
   padding: 20px;
 }
 
-.main-page_services_subtitle {
+.main-page__services-subtitle {
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
-.main-page_services_text {
+.main-page__services-text {
   font-size: 18px;
   line-height: 1.5;
 }
 
-.main-page_services_button_list {
+.main-page__services-buttons {
   display: flex;
   gap: 150px;
   justify-content: center;
   margin-top: 30px;
 }
 
-.main-page_services_button {
+.main-page__services-button {
   width: 80px;
   height: 80px;
   border-radius: 50%;

@@ -1,33 +1,32 @@
-.about {
+.main-page__about {
   padding-top: 80px;
   padding-bottom: 80px;
 }
 
-.about_title {
+.main-page__title {
   font-size: 32px;
   margin-bottom: 40px;
 }
 
-.about_wrap {
+.main-page__wrap {
   display: flex;
   gap: 40px;
 }
 
-.about_info {
+.main-page__info {
   width: 730px;
 }
 
-.about_image {
+.main-page__image {
   width: 640px;
   height: 360px;
 }
 
-.about_subtitle {
+.main-page__subtitle {
   margin-bottom: 20px;
 }
 
-.about_text {
+.main-page__text {
   font-size: 18px;
   line-height: 1.5;
-  // width: 850px;
 }
