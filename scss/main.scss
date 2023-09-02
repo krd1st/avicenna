@@ -1,17 +1,12 @@
-@import './utils/variables';
-@import './components/reset';
-@import './components/common';
-@import './utils/mixins';
-@import './components/container';
-@import './utils/current';
-@import './sections/header';
-@import './sections/main-page_hero';
-@import './sections/main-page_about';
-@import './sections/main-page_services';
-@import './sections/main-page_doctors';
-@import './sections/main-page_reviews';
-@import './sections/main-page_partners';
-@import './sections/about-clinic';
-@import './sections/doctors';
-@import './sections/services';
-@import './sections/footer';
+@import './utils/utils';
+
+@import './elements/header';
+
+@import './pages/main-page';
+@import './pages/about-clinic';
+@import './pages/doctors';
+@import './pages/gallery';
+@import './pages/services';
+@import './pages/contacts';
+
+@import './elements/footer';
