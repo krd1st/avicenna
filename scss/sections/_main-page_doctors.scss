@@ -1,14 +1,14 @@
-.doctors {
+.main-page_doctors {
   padding-top: 80px;
   padding-bottom: 80px;
 }
 
-.doctors_title {
+.main-page_doctors_title {
   font-size: 32px;
   margin-bottom: 40px;
 }
 
-.doctors_list {
+.main-page_doctors_list {
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
@@ -16,7 +16,7 @@
   margin-bottom: 40px;
 }
 
-.doctors_item {
+.main-page_doctors_item {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -28,17 +28,17 @@
   padding: 15px;
 }
 
-.doctors_subtitle {
+.main-page_doctors_subtitle {
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
-.doctors_text {
+.main-page_doctors_text {
   font-size: 18px;
   line-height: 1.5;
 }
 
-.doctors_link {
+.main-page_doctors_link {
   font-size: 24px;
   font-weight: 700;
 }

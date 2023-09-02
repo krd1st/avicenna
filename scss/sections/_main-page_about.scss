@@ -13,10 +13,13 @@
   gap: 40px;
 }
 
+.about_info {
+  width: 730px;
+}
+
 .about_image {
-  width: 540px;
+  width: 640px;
   height: 360px;
-  outline: 1px solid black;
 }
 
 .about_subtitle {
@@ -26,5 +29,5 @@
 .about_text {
   font-size: 18px;
   line-height: 1.5;
-  width: 850px;
+  // width: 850px;
 }

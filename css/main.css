@@ -45,7 +45,21 @@ img {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  /* outline: 1px solid black; */
+}
+
+.current {
+  position: relative;
+}
+.current::after {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 0;
+  bottom: 0;
+  background-color: black;
+  width: 100%;
+  height: 3px;
+  border-radius: 2px;
 }
 
 .header_up {
@@ -53,7 +67,7 @@ img {
 }
 
 .header_up .container {
-  height: 80px;
+  height: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -73,7 +87,7 @@ img {
 }
 
 .header_down .container {
-  height: 150px;
+  height: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -170,10 +184,13 @@ img {
   gap: 40px;
 }
 
+.about_info {
+  width: 730px;
+}
+
 .about_image {
-  width: 540px;
+  width: 640px;
   height: 360px;
-  outline: 1px solid black;
 }
 
 .about_subtitle {
@@ -183,64 +200,71 @@ img {
 .about_text {
   font-size: 18px;
   line-height: 1.5;
-  width: 850px;
 }
 
-.services {
+.main-page_services {
   background-color: rgb(147, 161, 228);
   padding-top: 80px;
   padding-bottom: 80px;
 }
 
-.services_title {
+.main-page_services_title {
   font-size: 32px;
   margin-bottom: 40px;
 }
 
-.services_list {
+.main-page_services_list {
   display: flex;
   gap: 30px;
   justify-content: space-between;
 }
 
-.services_item {
+.main-page_services_item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 450px;
+  width: 440px;
   height: 600px;
   background-color: #fff;
   padding: 20px;
 }
 
-.services_image {
-  width: 100%;
-  height: 300px;
-  padding: 20px;
-  outline: 1px solid black;
+.main-page_services_subtitle {
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 
-.services_subtitle {
-  margin-bottom: 20px;
-}
-
-.services_text {
+.main-page_services_text {
   font-size: 18px;
   line-height: 1.5;
 }
 
-.doctors {
+.main-page_services_button_list {
+  display: flex;
+  gap: 150px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.main-page_services_button {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border-color: black;
+  border: none;
+}
+
+.main-page_doctors {
   padding-top: 80px;
   padding-bottom: 80px;
 }
 
-.doctors_title {
+.main-page_doctors_title {
   font-size: 32px;
   margin-bottom: 40px;
 }
 
-.doctors_list {
+.main-page_doctors_list {
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
@@ -248,34 +272,27 @@ img {
   margin-bottom: 40px;
 }
 
-.doctors_item {
+.main-page_doctors_item {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 330px;
-  height: 450px;
+  height: 430px;
   background-color: rgb(70, 202, 68);
-  padding: 20px;
+  padding: 15px;
 }
 
-.doctors_image {
-  width: 100%;
-  height: 600px;
-  padding: 20px;
-  outline: 1px solid black;
+.main-page_doctors_subtitle {
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 
-.doctors_subtitle {
-  margin-bottom: 20px;
-}
-
-.doctors_text {
+.main-page_doctors_text {
   font-size: 18px;
   line-height: 1.5;
 }
 
-.doctors_link {
+.main-page_doctors_link {
   font-size: 24px;
   font-weight: 700;
 }
@@ -356,6 +373,49 @@ img {
   height: 80px;
   outline: 1px solid black;
   margin: 0 auto;
+}
+
+.doctors {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.doctors_title {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.doctors_list {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.doctors_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 330px;
+  height: 430px;
+  background-color: rgb(70, 202, 68);
+  padding: 15px;
+}
+
+.doctors_subtitle {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.doctors_text {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.doctors_link {
+  font-size: 24px;
+  font-weight: 700;
 }
 
 .footer {
