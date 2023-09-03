@@ -1,17 +1,15 @@
 .header-up {
   background-color: rgb(255, 174, 0);
-}
+  display: none;
 
-.header-up .container {
-  height: 40px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include sm-desktop {
+    display: block;
+  }
 }
 
 .header-up__address {
   color: black;
-  font-size: 18px;
+  float: none;
 }
 
 .header-up__phonelist {
@@ -19,46 +17,57 @@
   gap: 30px;
 }
 
-.header-up__item {
-  font-size: 18px;
-}
-
 .header-up__phone {
   color: black;
 }
 
+//===========================================================
+
 .header-down {
   border-bottom: rgb(211, 203, 203) 1px solid;
+  display: none;
+
+  @include sm-desktop {
+    display: block;
+  }
 }
 
-.header-down .container {
+.header-down .header-container {
   height: 70px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .header-down__list {
-  height: 50px;
-
   display: flex;
   align-items: center;
-  gap: 60px;
+  gap: 30px;
+
+  @media screen and (min-width: 1300px) {
+    gap: 60px;
+  }
 }
 
 .header-down__item {
-  font-size: 20px;
-  font-weight: 500;
+  font-weight: 600;
+  font-size: 18px;
+
+  @media screen and (min-width: 1300px) {
+    font-size: 20px;
+  }
 }
 
 .header-down__link {
   color: black;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 1300px) {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
 }
 
 .header-down__link:hover,
@@ -73,6 +82,7 @@
 
   font-size: 20px;
   font-weight: 700;
+
   background-color: lightgreen;
 
   border: transparent;
@@ -87,4 +97,16 @@
 .header-down__button:hover {
   background-color: rgb(119, 237, 119);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+//===========================================================
+
+.header-menu {
+  display: none;
+  @media screen and (max-width: 1023px) {
+    display: block;
+    height: 250px;
+    background-color: red;
+    margin-bottom: 30px;
+  }
 }
