@@ -3,18 +3,34 @@
   padding-bottom: 80px;
 }
 
+.main-page__about-container {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.main-page__image {
+  @include sm-desktop {
+    float: left;
+    padding-right: 20px;
+  }
+  @include desktop {
+    float: none;
+  }
+}
+
 .main-page__title {
   font-size: 32px;
   margin-bottom: 40px;
 }
 
 .main-page__wrap {
-  display: flex;
-  gap: 40px;
-}
-
-.main-page__info {
-  width: 730px;
+  @include desktop {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .main-page__subtitle {
@@ -24,4 +40,8 @@
 .main-page__text {
   font-size: 18px;
   line-height: 1.5;
+
+  @include desktop {
+    width: 750px;
+  }
 }
