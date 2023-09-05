@@ -11,7 +11,15 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.11.0/simple-lightbox.css"
+      integrity="sha512-HL1y3YvMbRp23VyjlaZDXCwtM5iJ6amoDyEcjpANI6qObX9pb8B7c31UJVyesMb3LKvmS8sr6eKOFMAEaHgf+g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="./scss/pages/_gallery.scss" />
   </head>
   <body>
     <header class="header">
@@ -80,10 +88,24 @@
         </div>
       </div>
     </header>
+    <main>
+      <section class="gallery">
+        <div class="container">
+          <div class="gallery__list list"></div>
+        </div>
+      </section>
+    </main>
     <footer class="footer">
       <div class="container">
         <p class="footer__title">Додаткова інформація</p>
       </div>
     </footer>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.11.0/simple-lightbox.min.js"
+      integrity="sha512-6MY1+N+yqKr8NaWCd7SsFAavdwAnxKihOP2BI0MnU+k8khGU+op83TxJE7dYj0o2mmtfDbRs7U1jAmAeEOjUnw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./js/gallery/gallery.js" type="module"></script>
   </body>
 </html>
