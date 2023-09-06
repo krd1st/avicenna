@@ -132,6 +132,15 @@ img {
   }
 }
 
+.services-container {
+  max-width: 1440px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 1px solid black;
+}
+
 .list {
   list-style: none;
 }
@@ -884,15 +893,43 @@ img {
 
 .main-page__reviews-list {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+}
+@media screen and (min-width: 768px) {
+  .main-page__reviews-list {
+    flex-direction: row;
+    gap: 18px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .main-page__reviews-list {
+    gap: 32px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .main-page__reviews-list {
+    gap: 135px;
+  }
 }
 
 .main-page__reviews-item {
-  width: 300px;
-  height: 300px;
   background-color: rgb(225, 240, 225);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+@media screen and (min-width: 768px) {
+  .main-page__reviews-item {
+    width: 234px;
+    height: 234px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .main-page__reviews-item {
+    width: 300px;
+    height: 300px;
+  }
 }
 
 .main-page__reviews-header {
@@ -909,12 +946,22 @@ img {
 }
 
 .main-page__reviews-name {
-  font-size: 20px;
-  font-weight: 600;
+  font-weight: 500;
+}
+@media screen and (min-width: 1024px) {
+  .main-page__reviews-name {
+    font-size: 20px;
+    font-weight: 600;
+  }
 }
 
 .main-page__reviews-profession {
-  font-size: 18px;
+  font-size: 14px;
+}
+@media screen and (min-width: 1024px) {
+  .main-page__reviews-profession {
+    font-size: 18px;
+  }
 }
 
 .main-page__reviews-body {
@@ -922,8 +969,13 @@ img {
 }
 
 .main-page__reviews-text {
-  font-size: 18px;
+  font-size: 14px;
   text-align: center;
+}
+@media screen and (min-width: 1024px) {
+  .main-page__reviews-text {
+    font-size: 18px;
+  }
 }
 
 .main-page__partners {
@@ -938,13 +990,31 @@ img {
 
 .main-page__partners-list {
   display: flex;
+  justify-content: space-evenly;
 }
 
 .main-page__partners-item {
-  width: 300px;
-  height: 80px;
-  outline: 1px solid black;
-  margin: 0 auto;
+  width: 70px;
+  height: 40px;
+  background-color: black;
+}
+@media screen and (min-width: 768px) {
+  .main-page__partners-item {
+    width: 130px;
+    height: 50px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .main-page__partners-item {
+    width: 200px;
+    height: 60px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .main-page__partners-item {
+    width: 300px;
+    height: 80px;
+  }
 }
 
 .about-clinic {
@@ -1017,19 +1087,12 @@ img {
 }
 
 .doctors__subtitle {
+  font-size: 20px;
   margin-top: 15px;
-  margin-bottom: 15px;
-}
-@media screen and (min-width: 480px) {
-  .doctors__subtitle {
-    font-size: 18px;
-    margin-top: 15px;
-    margin-bottom: 10px;
-  }
+  margin-bottom: 10px;
 }
 @media screen and (min-width: 768px) {
   .doctors__subtitle {
-    font-size: 20px;
     margin-top: 20px;
     margin-bottom: 10px;
   }
@@ -1094,16 +1157,14 @@ img {
   justify-content: center;
   align-items: center;
   gap: 30px;
-  width: 100%;
-  height: 500px;
-  background-color: #f1d5d5;
+  max-width: 100%;
+  background-color: red;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   margin-bottom: 40px;
 }
 
 .services__block {
-  height: 100%;
   background-color: white;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);

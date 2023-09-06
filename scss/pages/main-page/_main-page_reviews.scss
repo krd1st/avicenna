@@ -11,16 +11,39 @@
 
 .main-page__reviews-list {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+
+  @include tablet {
+    flex-direction: row;
+    gap: 18px;
+  }
+
+  @include sm-desktop {
+    gap: 32px;
+  }
+
+  @include desktop {
+    gap: 135px;
+  }
 }
 
 .main-page__reviews-item {
-  width: 300px;
-  height: 300px;
   background-color: rgb(225, 240, 225);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+
+  @include tablet {
+    width: 234px;
+    height: 234px;
+  }
+
+  @include sm-desktop {
+    width: 300px;
+    height: 300px;
+  }
 }
 
 .main-page__reviews-header {
@@ -37,12 +60,20 @@
 }
 
 .main-page__reviews-name {
-  font-size: 20px;
-  font-weight: 600;
+  font-weight: 500;
+
+  @include sm-desktop {
+    font-size: 20px;
+    font-weight: 600;
+  }
 }
 
 .main-page__reviews-profession {
-  font-size: 18px;
+  font-size: 14px;
+
+  @include sm-desktop {
+    font-size: 18px;
+  }
 }
 
 .main-page__reviews-body {
@@ -50,6 +81,10 @@
 }
 
 .main-page__reviews-text {
-  font-size: 18px;
+  font-size: 14px;
   text-align: center;
+
+  @include sm-desktop {
+    font-size: 18px;
+  }
 }
