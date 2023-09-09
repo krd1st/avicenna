@@ -512,7 +512,7 @@ img {
 
 .header-down__button {
   display: block;
-  width: 200px;
+  width: 150px;
   height: 50px;
   font-size: 18px;
   font-weight: 700;
@@ -527,6 +527,28 @@ img {
 }
 .header-down__button:hover, .header-down__button:focus {
   background-color: var(--button-hover-focus-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.header-down__doctors-link {
+  display: inline-block;
+  width: 150px;
+  height: 50px;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  background-color: var(--second-hover-focus-color);
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  transition-property: background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header-down__doctors-link:hover, .header-down__doctors-link:focus {
+  background-color: var(--main-hover-focus-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
@@ -1123,6 +1145,24 @@ img {
 
 .doctors__text {
   color: var(--main-title-color);
+}
+
+.doctors__link {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  background-color: var(--second-hover-focus-color);
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  padding: 10px 20px;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.doctors__link:hover, .doctors__link:focus {
+  background-color: var(--main-hover-focus-color);
 }
 
 .gallery__list {

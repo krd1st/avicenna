@@ -70,3 +70,28 @@
 .doctors__text {
   color: var(--main-title-color);
 }
+
+.doctors__link {
+  display: inline-block;
+
+  text-align: center;
+  text-decoration: none;
+
+  background-color: var(--second-hover-focus-color);
+  color: #ffffff;
+
+  border: none;
+  border-radius: 5px;
+
+  margin-top: 20px;
+  padding: 10px 20px;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: var(--main-hover-focus-color);
+  }
+}
