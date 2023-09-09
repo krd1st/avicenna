@@ -1,6 +1,8 @@
 .hero {
   padding-top: 140px;
   padding-bottom: 140px;
+  --hero-bg: #c4c4c4;
+
   @include tablet {
     padding-top: 180px;
     padding-bottom: 180px;
@@ -49,7 +51,7 @@
 
   font-size: 30px;
   font-weight: 700;
-  color: white;
+  color: var(--bg-text-color);
 
   margin: 0 auto;
 

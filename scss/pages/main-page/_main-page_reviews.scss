@@ -1,7 +1,7 @@
 .main-page__reviews {
   padding-top: 80px;
   padding-bottom: 80px;
-  background-color: #b1a2a2;
+  background-color: var(--hero-bg);
 }
 
 .main-page__reviews-title {
@@ -30,7 +30,7 @@
 }
 
 .main-page__reviews-item {
-  background-color: rgb(225, 240, 225);
+  background-color: var(--bg-card-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -55,7 +55,6 @@
 }
 
 .main-page__reviews-image {
-  background-color: rgb(0, 0, 0);
   margin-right: 30px;
 }
 
@@ -63,7 +62,7 @@
   font-weight: 500;
 
   @include sm-desktop {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
   }
 }
@@ -72,7 +71,7 @@
   font-size: 14px;
 
   @include sm-desktop {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 

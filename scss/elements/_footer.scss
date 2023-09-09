@@ -1,17 +1,20 @@
 .footer {
-  background-color: rgb(47, 45, 45);
+  background-color: var(--footer-bg);
 }
 
 .footer .container {
-  height: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  height: 400px;
 }
 
 .footer__title {
   font-size: 32px;
   font-weight: 700;
+
   text-align: center;
-  color: white;
+
+  color: var(--bg-text-color);
 }
