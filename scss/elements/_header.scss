@@ -40,7 +40,7 @@
   fill: currentColor;
 }
 
-//===========================================================
+//============================================================//
 
 .header-down {
   display: none;
@@ -54,7 +54,7 @@
 }
 
 .header-down .header-container {
-  height: 70px;
+  height: 60px;
 }
 
 .header-down__list {
@@ -79,8 +79,8 @@
 .header-down__link {
   color: var(--main-title-color);
 
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 17px;
+  padding-bottom: 17px;
 
   transition-property: color;
   transition-duration: 250ms;
@@ -97,21 +97,27 @@
   }
 }
 
-.header-down__button {
-  display: block;
+.header-down__wrap {
+  display: flex;
+  gap: 10px;
+}
 
-  width: 150px;
+.header-down__reference {
+  width: 200px;
   height: 50px;
 
   font-size: 18px;
   font-weight: 700;
+  text-align: center;
+  text-decoration: none;
 
-  color: var(--main-title-color);
   background-color: var(--button-color);
+  color: var(--main-title-color);
 
-  border: transparent;
-  border-radius: 4px;
-  box-shadow: transparent;
+  border: none;
+  border-radius: 5px;
+
+  padding: 14px;
 
   transition-property: background-color, box-shadow;
   transition-duration: 250ms;
@@ -124,59 +130,12 @@
   }
 }
 
-.header-down__doctors-link {
-  display: inline-block;
-
-  width: 150px;
-  height: 50px;
-
-  font-size: 18px;
-  font-weight: 700;
-  text-align: center;
-  text-decoration: none;
-
-  background-color: var(--second-hover-focus-color);
-  color: #ffffff;
-
-  border: none;
-  border-radius: 5px;
-
-  padding: 5px;
-
-  transition-property: background-color, box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-  &:hover,
-  &:focus {
-    background-color: var(--main-hover-focus-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  }
-}
-//===========================================================
+// ============================================================//
 
 .header-menu {
   display: none;
 
   @media screen and (max-width: 1023px) {
     display: block;
-
-    height: 80px;
-
-    background-color: var(--header-down-bg);
   }
-}
-
-.header-menu__container {
-  display: flex;
-  justify-content: space-between;
-
-  width: 100%;
-
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-
-  outline: 1px solid black;
 }

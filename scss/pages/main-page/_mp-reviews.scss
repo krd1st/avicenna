@@ -1,15 +1,15 @@
-.main-page__reviews {
+.mp-reviews {
+  background-color: var(--hero-bg);
   padding-top: 80px;
   padding-bottom: 80px;
-  background-color: var(--hero-bg);
 }
 
-.main-page__reviews-title {
+.mp-reviews__title {
   text-align: center;
   margin-bottom: 40px;
 }
 
-.main-page__reviews-list {
+.mp-reviews__list {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -29,10 +29,9 @@
   }
 }
 
-.main-page__reviews-item {
+.mp-reviews__item {
   background-color: var(--bg-card-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--card-box-shadow);
   border-radius: 0px 0px 4px 4px;
 
   @include tablet {
@@ -46,19 +45,21 @@
   }
 }
 
-.main-page__reviews-header {
+.mp-reviews__header {
   display: flex;
   align-items: center;
   height: 50px;
-  padding: 5px;
+
   background-color: lightblue;
+
+  padding: 5px;
 }
 
-.main-page__reviews-image {
+.mp-reviews__image {
   margin-right: 30px;
 }
 
-.main-page__reviews-name {
+.mp-reviews__name {
   font-weight: 500;
 
   @include sm-desktop {
@@ -67,7 +68,7 @@
   }
 }
 
-.main-page__reviews-profession {
+.mp-reviews__profession {
   font-size: 14px;
 
   @include sm-desktop {
@@ -75,11 +76,11 @@
   }
 }
 
-.main-page__reviews-body {
+.mp-reviews__body {
   padding: 15px;
 }
 
-.main-page__reviews-text {
+.mp-reviews__text {
   font-size: 14px;
   text-align: center;
 

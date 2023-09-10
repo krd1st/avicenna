@@ -14,8 +14,6 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <!-- ===============================HEADER================================== -->
-
     <header class="header">
       <div class="header-up">
         <div class="header-container">
@@ -90,14 +88,11 @@
               >
             </li>
           </ul>
-          <a
-            href="./doctors.html"
-            class="header-down__doctors-link link pointer"
-            >Запис на прийом</a
-          >
-          <button class="header-down__button pointer" data-modal-open>
-            Виникло питання?
-          </button>
+          <div class="header-down__wrap">
+            <a href="./doctors.html" class="header-down__reference link pointer"
+              >Запис на прийом</a
+            >
+          </div>
         </div>
       </div>
       <div class="header-menu">
@@ -115,21 +110,21 @@
       </div>
     </header>
 
-    <!-- ==============================HERO================================= -->
+    <!-- ==============================HERO============================== -->
 
     <main>
-      <section class="hero hero__overlay">
+      <section class="mp-hero mp-hero__overlay">
         <div class="container">
-          <h1 class="hero__title">Клініка Avicenna</h1>
+          <h1 class="mp-hero__title">Клініка Avicenna</h1>
         </div>
       </section>
 
-      <!-- ============================ABOUT=============================== -->
+      <!-- ==============================ABOUT============================== -->
 
-      <section class="main-page__about">
-        <div class="main-page__about-container">
-          <h2 class="main-page__title">Про нас</h2>
-          <div class="main-page__wrap">
+      <section class="mp-about">
+        <div class="mp-about__container">
+          <h2 class="mp-about__title">Про нас</h2>
+          <div class="mp-about__wrap">
             <picture>
               <source
                 srcset="
@@ -139,16 +134,16 @@
                 media="(min-width: 1440px)"
               />
               <img
-                class="main-page__image"
+                class="mp-about__image"
                 src="./images/main-page/about_2x.jpg"
                 alt="Фото клініки"
                 width="640"
                 height="360"
               />
             </picture>
-            <div class="main-page__info">
-              <h2 class="main-page__subtitle">Клініка Avicenna</h2>
-              <p class="main-page__text-big">
+            <div class="mp-about__info">
+              <h2 class="mp-about__subtitle">Клініка Avicenna</h2>
+              <p class="mp-about__text-big">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae,
                 amet voluptatem sint tenetur aut libero provident nostrum porro
                 excepturi illum et architecto inventore ipsum reprehenderit
@@ -166,7 +161,7 @@
                 excepturi illum et architecto inventore ipsum reprehenderit
                 alias dolor quidem nemo officia lorem ipsum.
               </p>
-              <p class="main-page__text-small">
+              <p class="mp-about__text-small">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae,
                 amet voluptatem sint tenetur aut libero provident nostrum porro
                 excepturi illum et architecto inventore ipsum reprehenderit
@@ -175,7 +170,7 @@
                 tenetur aut libero provident nostrum porro excepturi illum.
                 Lorem ipsum dolor sit amet consectetur adipisicing
                 elit...&nbsp<a
-                  class="main-page__text-link link"
+                  class="mp-about__text-link link"
                   href="./about-clinic.html"
                   >Читати далі</a
                 >
@@ -185,13 +180,13 @@
         </div>
       </section>
 
-      <!-- =========================SERVICES=========================== -->
+      <!-- ==============================SERVICES============================== -->
 
-      <!-- <section class="main-page__services">
+      <!-- <section class="mp-services">
         <div class="container">
-          <h2 class="main-page__services-title">Наші послуги</h2>
-          <ul class="main-page__services-list list">
-            <li class="main-page__services-item">
+          <h2 class="mp-services__title">Наші послуги</h2>
+          <ul class="mp-services__list list">
+            <li class="mp-services__item">
               <picture>
                 <source
                   srcset="
@@ -201,22 +196,22 @@
                   media="(min-width: 1440px)"
                 />
                 <img
-                  class="main-page__services-image"
+                  class="mp-services__image"
                   src="./images/main-page/services1_2x.jpg"
                   alt="Послуга 1"
                   width="400"
                   height="300"
                 />
               </picture>
-              <h2 class="main-page__services-subtitle">Назва послуги</h2>
-              <p class="main-page__services-text">
+              <h2 class="mp-services__subtitle">Назва послуги</h2>
+              <p class="mp-services__text">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic,
                 voluptatibus tempora autem quas atque voluptates officia id!
                 Voluptatum autem quod provident est. Non nobis quasi magnam
                 laborum autem distinctio dolores!
               </p>
             </li>
-            <li class="main-page__services-item">
+            <li class="mp-services__item">
               <picture>
                 <source
                   srcset="
@@ -226,22 +221,22 @@
                   media="(min-width: 1440px)"
                 />
                 <img
-                  class="main-page__services-image"
+                  class="mp-services__image"
                   src="./images/main-page/services2_2x.jpg"
                   alt="Послуга 2"
                   width="400"
                   height="300"
                 />
               </picture>
-              <h2 class="main-page__services-subtitle">Назва послуги</h2>
-              <p class="main-page__services-text">
+              <h2 class="mp-services__subtitle">Назва послуги</h2>
+              <p class="mp-services__text">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic,
                 voluptatibus tempora autem quas atque voluptates officia id!
                 Voluptatum autem quod provident est. Non nobis quasi magnam
                 laborum autem distinctio dolores!
               </p>
             </li>
-            <li class="main-page__services-item">
+            <li class="mp-services__item">
               <picture>
                 <source
                   srcset="
@@ -251,15 +246,15 @@
                   media="(min-width: 1440px)"
                 />
                 <img
-                  class="main-page__services-image"
+                  class="mp-services__image"
                   src="./images/main-page/services3_2x.jpg"
                   alt="Послуга 3"
                   width="400"
                   height="300"
                 />
               </picture>
-              <h2 class="main-page__services-subtitle">Назва послуги</h2>
-              <p class="main-page__services-text">
+              <h2 class="mp-services__subtitle">Назва послуги</h2>
+              <p class="mp-services__text">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic,
                 voluptatibus tempora autem quas atque voluptates officia id!
                 Voluptatum autem quod provident est. Non nobis quasi magnam
@@ -267,20 +262,20 @@
               </p>
             </li>
           </ul>
-          <div class="main-page__services-buttons">
-            <button class="main-page__services-button pointer"></button>
-            <button class="main-page__services-button pointer"></button>
+          <div class="mp-services__buttons">
+            <button class="mp-services__button pointer"></button>
+            <button class="mp-services__button pointer"></button>
           </div>
         </div>
       </section> -->
 
-      <!-- =========================DOCTORS=========================== -->
+      <!-- ==============================DOCTORS============================== -->
 
-      <section class="main-page__doctors">
-        <div class="doctors-container">
-          <h2 class="main-page__doctors-title">Наші лікарі</h2>
-          <ul class="main-page__doctors-list list">
-            <li class="main-page__doctors-item">
+      <section class="mp-doctors">
+        <div class="mp-doctors__container">
+          <h2 class="mp-doctors__title">Наші лікарі</h2>
+          <ul class="mp-doctors__list list">
+            <li class="mp-doctors__item">
               <picture>
                 <source
                   srcset="
@@ -290,17 +285,17 @@
                   media="(min-width: 1440px)"
                 />
                 <img
-                  class="main-page__doctors-image"
+                  class="mp-doctors__image"
                   src="./images/main-page/doctors1_2x.jpg"
                   alt="Доктор"
                   width="300"
                   height="300"
                 />
               </picture>
-              <h2 class="main-page__doctors-subtitle">Прізвище Ім'я</h2>
-              <p class="main-page__doctors-text">Посада</p>
+              <h2 class="mp-doctors__subtitle">Прізвище Ім'я</h2>
+              <p class="mp-doctors__text">Посада</p>
             </li>
-            <li class="main-page__doctors-item">
+            <li class="mp-doctors__item">
               <picture>
                 <source
                   srcset="
@@ -310,17 +305,17 @@
                   media="(min-width: 1440px)"
                 />
                 <img
-                  class="main-page__doctors-image"
+                  class="mp-doctors__image"
                   src="./images/main-page/doctors1_2x.jpg"
                   alt="Доктор"
                   width="300"
                   height="300"
                 />
               </picture>
-              <h2 class="main-page__doctors-subtitle">Прізвище Ім'я</h2>
-              <p class="main-page__doctors-text">Посада</p>
+              <h2 class="mp-doctors__subtitle">Прізвище Ім'я</h2>
+              <p class="mp-doctors__text">Посада</p>
             </li>
-            <li class="main-page__doctors-item">
+            <li class="mp-doctors__item">
               <picture>
                 <source
                   srcset="
@@ -330,17 +325,17 @@
                   media="(min-width: 1440px)"
                 />
                 <img
-                  class="main-page__doctors-image"
+                  class="mp-doctors__image"
                   src="./images/main-page/doctors1_2x.jpg"
                   alt="Доктор"
                   width="300"
                   height="300"
                 />
               </picture>
-              <h2 class="main-page__doctors-subtitle">Прізвище Ім'я</h2>
-              <p class="main-page__doctors-text">Посада</p>
+              <h2 class="mp-doctors__subtitle">Прізвище Ім'я</h2>
+              <p class="mp-doctors__text">Посада</p>
             </li>
-            <li class="main-page__doctors-item">
+            <li class="mp-doctors__item">
               <picture>
                 <source
                   srcset="
@@ -350,43 +345,43 @@
                   media="(min-width: 1440px)"
                 />
                 <img
-                  class="main-page__doctors-image"
+                  class="mp-doctors__image"
                   src="./images/main-page/doctors1_2x.jpg"
                   alt="Доктор"
                   width="300"
                   height="300"
                 />
               </picture>
-              <h2 class="main-page__doctors-subtitle">Прізвище Ім'я</h2>
-              <p class="main-page__doctors-text">Посада</p>
+              <h2 class="mp-doctors__subtitle">Прізвище Ім'я</h2>
+              <p class="mp-doctors__text">Посада</p>
             </li>
           </ul>
-          <a href="doctors.html" class="main-page__doctors-link link"
+          <a href="doctors.html" class="mp-doctors__link link"
             >Показати усіх лікарів -></a
           >
         </div>
       </section>
 
-      <!-- =========================REVIEWS=========================== -->
+      <!-- ==============================REVIEWS============================== -->
 
-      <section class="main-page__reviews">
+      <section class="mp-reviews">
         <div class="container">
-          <h2 class="main-page__reviews-title">Відгуки наших клієнтів</h2>
-          <ul class="main-page__reviews-list list">
-            <li class="main-page__reviews-item">
-              <div class="main-page__reviews-header">
+          <h2 class="mp-reviews__title">Відгуки наших клієнтів</h2>
+          <ul class="mp-reviews__list list">
+            <li class="mp-reviews__item">
+              <div class="mp-reviews__header">
                 <img
                   src="./images/main-page/reviewer1.jpg"
                   alt=""
-                  class="main-page__reviews-image"
+                  class="mp-reviews__image"
                 />
-                <div class="main-page__reviews-wrap">
-                  <p class="main-page__reviews-name">Роман Галдава</p>
-                  <p class="main-page__reviews-profession">Терапевт</p>
+                <div class="mp-reviews__wrap">
+                  <p class="mp-reviews__name">Роман Галдава</p>
+                  <p class="mp-reviews__profession">Терапевт</p>
                 </div>
               </div>
-              <div class="main-page__reviews-body">
-                <p class="main-page__reviews-text">
+              <div class="mp-reviews__body">
+                <p class="mp-reviews__text">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Veniam eaque quasi harum, quaerat omnis odio iure repudiandae
                   blanditiis totam dolorum quibusdam, a nobis officia pariatur
@@ -394,20 +389,20 @@
                 </p>
               </div>
             </li>
-            <li class="main-page__reviews-item">
-              <div class="main-page__reviews-header">
+            <li class="mp-reviews__item">
+              <div class="mp-reviews__header">
                 <img
                   src="./images/main-page/reviewer2.jpg"
                   alt=""
-                  class="main-page__reviews-image"
+                  class="mp-reviews__image"
                 />
-                <div class="main-page__reviews-wrap">
-                  <p class="main-page__reviews-name">Роман Галдава</p>
-                  <p class="main-page__reviews-profession">Вчитель</p>
+                <div class="mp-reviews__wrap">
+                  <p class="mp-reviews__name">Роман Галдава</p>
+                  <p class="mp-reviews__profession">Вчитель</p>
                 </div>
               </div>
-              <div class="main-page__reviews-body">
-                <p class="main-page__reviews-text">
+              <div class="mp-reviews__body">
+                <p class="mp-reviews__text">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Veniam eaque quasi harum, quaerat omnis odio iure repudiandae
                   blanditiis totam dolorum quibusdam, a nobis officia pariatur
@@ -415,20 +410,20 @@
                 </p>
               </div>
             </li>
-            <li class="main-page__reviews-item">
-              <div class="main-page__reviews-header">
+            <li class="mp-reviews__item">
+              <div class="mp-reviews__header">
                 <img
                   src="./images/main-page/reviewer3.jpg"
                   alt=""
-                  class="main-page__reviews-image"
+                  class="mp-reviews__image"
                 />
-                <div class="main-page__reviews-wrap">
-                  <p class="main-page__reviews-name">Роман Галдава</p>
-                  <p class="main-page__reviews-profession">Програміст</p>
+                <div class="mp-reviews__wrap">
+                  <p class="mp-reviews__name">Роман Галдава</p>
+                  <p class="mp-reviews__profession">Програміст</p>
                 </div>
               </div>
-              <div class="main-page__reviews-body">
-                <p class="main-page__reviews-text">
+              <div class="mp-reviews__body">
+                <p class="mp-reviews__text">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Veniam eaque quasi harum, quaerat omnis odio iure repudiandae
                   blanditiis totam dolorum quibusdam, a nobis officia pariatur
@@ -440,21 +435,21 @@
         </div>
       </section>
 
-      <!-- =========================PARTNERS=========================== -->
+      <!-- ==============================PARTNERS============================== -->
 
-      <section class="main-page__partners">
+      <section class="mp-partners">
         <div class="container">
-          <h2 class="main-page__partners-title">Наші партнери</h2>
-          <ul class="main-page__partners-list list">
-            <li class="main-page__partners-item"></li>
-            <li class="main-page__partners-item"></li>
-            <li class="main-page__partners-item"></li>
+          <h2 class="mp-partners__title">Наші партнери</h2>
+          <ul class="mp-partners__list list">
+            <li class="mp-partners__item"></li>
+            <li class="mp-partners__item"></li>
+            <li class="mp-partners__item"></li>
           </ul>
         </div>
       </section>
     </main>
 
-    <!-- =========================FOOTER=========================== -->
+    <!-- ==============================FOOTER============================== -->
 
     <footer class="footer">
       <div class="container">
@@ -462,90 +457,6 @@
       </div>
     </footer>
 
-    <!-- =========================MODAL WINDOW=========================== -->
-
-    <div class="backdrop is-hidden" data-modal>
-      <div class="header-modal">
-        <button
-          type="button"
-          class="header-modal__close-btn pointer"
-          data-modal-close
-        >
-          <svg class="header-modal__close-icon" width="11" height="11">
-            <use href="./images/icons.svg#icon-close"></use>
-          </svg>
-        </button>
-        <p class="header-modal__title">Виникло питання? Ми вам передзвонимо!</p>
-        <form class="header-modal__form">
-          <div class="header-input-wrap">
-            <label for="user-name" class="header-input-wrap__label"
-              >Як до Вас звертатися?</label
-            >
-            <input
-              type="text"
-              class="header-input-wrap__field"
-              name="user-name"
-              id="user-name"
-            />
-            <svg class="header-input-wrap__icon" width="18" height="18">
-              <use href="./images/icons.svg#icon-modal-first"></use>
-            </svg>
-          </div>
-          <div class="header-input-wrap">
-            <label for="user-tel" class="header-input-wrap__label"
-              >Ваш телефон</label
-            >
-            <input
-              type="tel"
-              class="header-input-wrap__field"
-              name="user-tel"
-              id="user-tel"
-            />
-            <svg class="header-input-wrap__icon" width="18" height="18">
-              <use href="./images/icons.svg#icon-modal-second"></use>
-            </svg>
-          </div>
-          <div class="header-input-wrap">
-            <label for="user-mail" class="header-input-wrap__label"
-              >Ваша пошта (необов'язково)</label
-            >
-            <input
-              type="email"
-              class="header-input-wrap__field"
-              name="user-mail"
-              id="user-mail"
-            />
-            <svg class="header-input-wrap__icon" width="18" height="18">
-              <use href="./images/icons.svg#icon-modal-third"></use>
-            </svg>
-          </div>
-          <div class="header-comment-wrap">
-            <label for="user-comment" class="header-input-wrap__label"
-              >Ваше питання
-            </label>
-            <textarea
-              class="header-comment-wrap__label"
-              placeholder="Введіть текст"
-              name="user-comment"
-              id="user-comment"
-            ></textarea>
-          </div>
-          <input
-            type="checkbox"
-            name="user-policy"
-            value="true"
-            class="header-input-check visually-hidden"
-            id="user-policy"
-          />
-          <button type="submit" class="header-modal-btn pointer">
-            Відправити
-          </button>
-        </form>
-      </div>
-    </div>
-
-    <!-- =========================SCRIPTS=========================== -->
-
-    <script src="./js/modal.js"></script>
+    <!-- ==============================SCRIPTS============================== -->
   </body>
 </html>

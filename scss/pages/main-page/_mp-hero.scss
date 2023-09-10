@@ -1,7 +1,7 @@
-.hero {
+.mp-hero {
+  --hero-bg: #c4c4c4;
   padding-top: 140px;
   padding-bottom: 140px;
-  --hero-bg: #c4c4c4;
 
   @include tablet {
     padding-top: 180px;
@@ -17,28 +17,35 @@
   }
 }
 
-.hero__overlay {
+.mp-hero__overlay {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right;
+
   margin-left: auto;
   margin-right: auto;
+
   background-image: var(--hero-gradient), url(..//../images/main-page/hero.jpg);
+
   @include retina {
     background-image: var(--hero-gradient),
       url(..//../images/main-page/hero.jpg);
   }
+
   @include tablet {
     background-image: var(--hero-gradient),
       url(..//../images/main-page/hero.jpg);
+
     @include retina {
       background-image: var(--hero-gradient),
         url(..//../images/main-page/hero.jpg);
     }
   }
+
   @include desktop {
     background-image: var(--hero-gradient),
       url(..//../images/main-page/hero.jpg);
+
     @include retina {
       background-image: var(--hero-gradient),
         url(..//../images/main-page/hero.jpg);
@@ -46,7 +53,7 @@
   }
 }
 
-.hero__title {
+.mp-hero__title {
   width: fit-content;
 
   font-size: 30px;

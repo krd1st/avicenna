@@ -8,6 +8,7 @@
   font-size: 32px;
   color: var(--main-title-color);
   text-align: center;
+
   margin-bottom: 40px;
 }
 
@@ -53,20 +54,23 @@
 }
 
 .services__item {
+  position: relative;
+
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  position: relative;
+
   margin-bottom: 20px;
 }
 
 .services__item::after {
   content: '';
   display: block;
+  height: 1px;
+
   flex-grow: 1;
 
   background-color: black;
-  height: 1px;
 }
 
 .services__text {
