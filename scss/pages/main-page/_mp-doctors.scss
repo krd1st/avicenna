@@ -3,6 +3,20 @@
   padding-bottom: 80px;
 }
 
+.mp-doctors .container {
+  @include tablet {
+    width: 768px;
+  }
+
+  @include sm-desktop {
+    width: 1024px;
+  }
+
+  @include desktop {
+    width: 1440px;
+  }
+}
+
 .mp-doctors__title {
   font-size: 32px;
   color: var(--main-title-color);

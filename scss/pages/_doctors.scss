@@ -3,6 +3,20 @@
   padding-bottom: 80px;
 }
 
+.doctors .container {
+  @include tablet {
+    width: 768px;
+  }
+
+  @include sm-desktop {
+    width: 1024px;
+  }
+
+  @include desktop {
+    width: 1440px;
+  }
+}
+
 .doctors__title {
   font-size: 32px;
   text-align: center;

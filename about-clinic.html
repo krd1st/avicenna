@@ -16,7 +16,7 @@
   <body>
     <header class="header">
       <div class="header-up">
-        <div class="header-container">
+        <div class="container">
           <a href="" class="header-up__link link"
             >Вул. Соборності 33 (Буд. Главпочтамта)
             <svg class="header-up__address-icon" width="17" height="17">
@@ -52,7 +52,7 @@
         </div>
       </div>
       <div class="header-down">
-        <div class="header-container">
+        <div class="container">
           <a href="./index.html" class="header-down__logo-link">
             <img
               class="header-down__logo"
@@ -86,11 +86,45 @@
               >
             </li>
           </ul>
-          <div class="header-down__wrap">
-            <a href="./doctors.html" class="header-down__reference link pointer"
-              >Запис на прийом</a
+          <a href="./doctors.html" class="header-down__reference link pointer"
+            >Запис на прийом</a
+          >
+        </div>
+      </div>
+      <div class="header-menu">
+        <div class="container">
+          <a href="./index.html" class="header-menu__logo-link">
+            <img
+              class="header-menu__logo"
+              src="./images/header-logo_2x.png"
+              alt="Фото клініки"
+              width="150"
+              height="50"
+            />
+          </a>
+          <button
+            type="button"
+            class="header-menu__button pointer"
+            aria-expanded="false"
+            aria-controls="menu"
+            data-menu-button
+          >
+            <svg
+              class="header-menu__icon"
+              width="40px"
+              height="40px"
+              aria-label="Переключатель мобильного меню"
             >
-          </div>
+              <use
+                class="header-menu__burger"
+                href="./images/icons.svg#icon-menu-burger"
+              ></use>
+              <use
+                class="header-menu__cross"
+                href="./images/icons.svg#icon-menu-closer"
+              ></use>
+            </svg>
+          </button>
         </div>
       </div>
     </header>
@@ -164,5 +198,6 @@
     </footer>
 
     <!-- =========================SCRIPTS=========================== -->
+    <script src="./js/header-menu.js"></script>
   </body>
 </html>

@@ -8,6 +8,12 @@
   }
 }
 
+.header-up .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .header-up__phonelist {
   display: flex;
   gap: 30px;
@@ -23,6 +29,9 @@
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  padding-top: 10.81px;
+  padding-bottom: 10.82px;
 
   &:hover,
   &:focus {
@@ -53,8 +62,16 @@
   }
 }
 
-.header-down .header-container {
-  height: 60px;
+.header-down .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-down__logo-link {
+  display: block;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .header-down__list {
@@ -77,19 +94,16 @@
 }
 
 .header-down__link {
+  display: block;
+
   color: var(--main-title-color);
 
-  padding-top: 17px;
-  padding-bottom: 17px;
+  padding-top: 18px;
+  padding-bottom: 18px;
 
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-  @media screen and (min-width: 1300px) {
-    padding-top: 15px;
-    padding-bottom: 15px;
-  }
 
   &:hover,
   &:focus {
@@ -138,4 +152,53 @@
   @media screen and (max-width: 1023px) {
     display: block;
   }
+}
+
+.header-menu .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-menu__logo-link {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.header-menu__button {
+  display: inline-flex;
+
+  background-color: transparent;
+  border: none;
+
+  z-index: 2;
+
+  margin-left: auto;
+  padding: 0;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--main-hover-focus-color);
+  }
+}
+
+.header-menu__button .header-menu__cross {
+  display: none;
+}
+
+.header-menu__button.is-open .header-menu__cross {
+  display: block;
+}
+
+.header-menu__button.is-open .header-menu__burger {
+  display: none;
+}
+
+.header-menu__cross {
+  fill: currentColor;
 }
