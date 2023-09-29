@@ -7,12 +7,13 @@
 .mp-services__title {
   font-size: 32px;
   margin-bottom: 40px;
+
+  color: var(--main-title-color);
 }
 
 .mp-services__list {
-  display: flex;
-  gap: 30px;
-  justify-content: space-between;
+  width: 100%;
+  margin: auto;
 }
 
 .mp-services__item {
@@ -20,24 +21,44 @@
   flex-direction: column;
   align-items: center;
 
-  width: 440px;
-  height: 600px;
-
   background-color: rgb(255, 255, 255);
   box-shadow: var(--card-box-shadow);
   border-radius: 0px 0px 4px 4px;
 
   padding: 20px;
+  margin: 20px;
 }
 
 .mp-services__subtitle {
+  font-size: 18px;
+
   margin-top: 20px;
   margin-bottom: 20px;
+
+  color: var(--main-title-color);
+
+  @include sm-desktop {
+    font-size: 20px;
+  }
+
+  @include desktop {
+    font-size: 24px;
+  }
 }
 
 .mp-services__text {
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.5;
+
+  color: var(--second-title-color);
+
+  @include sm-desktop {
+    font-size: 16px;
+  }
+
+  @include desktop {
+    font-size: 18px;
+  }
 }
 
 .mp-services__buttons {
