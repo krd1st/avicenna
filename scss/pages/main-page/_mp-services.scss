@@ -12,8 +12,20 @@
 }
 
 .mp-services__list {
-  width: 100%;
+  max-width: 480px;
   margin: auto;
+
+  @include tablet {
+    max-width: 768px;
+  }
+
+  @include sm-desktop {
+    max-width: 1024px;
+  }
+
+  @include desktop {
+    max-width: 1440px;
+  }
 }
 
 .mp-services__item {

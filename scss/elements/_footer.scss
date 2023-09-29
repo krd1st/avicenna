@@ -27,6 +27,7 @@
 .footer-contacts__wrap {
   width: 100%;
   margin-bottom: 40px;
+
   @include tablet {
     width: 33.333%;
     margin-bottom: 0px;
@@ -47,7 +48,7 @@
   align-items: center;
 
   font-size: 16px;
-  color: var(--bg-text-color);
+  color: var(--second-title-color);
 
   transition-property: color;
   transition-duration: 250ms;
@@ -76,12 +77,15 @@
 
 .footer-pages__lists {
   display: flex;
-  justify-content: center;
+  // justify-content: center;
+  justify-content: space-around;
   gap: 30px;
 
   margin-top: 30px;
+
   @include tablet {
     justify-content: space-around;
+    gap: 0;
   }
 }
 
@@ -93,15 +97,46 @@
 }
 
 .footer-pages__item {
+  position: relative;
+
   width: 100px;
   height: 30px;
 
+  border-bottom: 1px solid var(--second-title-color);
+
   @include mobile {
+    width: 150px;
+  }
+
+  @include tablet {
     width: 200px;
   }
 
-  border-bottom: 1px solid white;
   padding-bottom: 20px;
+
+  &::before {
+    position: absolute;
+
+    top: 20%;
+    left: -20%;
+
+    display: block;
+    content: '';
+
+    width: 6px;
+    height: 6px;
+
+    border-radius: 50%;
+    background-color: var(--main-hover-focus-color);
+
+    @include mobile {
+      left: -15%;
+    }
+
+    @include tablet {
+      left: -10%;
+    }
+  }
 }
 
 .footer-pages__link {
@@ -109,7 +144,7 @@
   width: 100%;
 
   font-size: 16px;
-  color: var(--bg-text-color);
+  color: var(--second-title-color);
 
   transition-property: color;
   transition-duration: 250ms;
