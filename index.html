@@ -27,108 +27,88 @@
   <body class="body">
     <div id="header" class="sub-header"></div>
     <header class="header">
-      <div class="header-up">
-        <div class="container">
-          <a
-            href="https://maps.app.goo.gl/UGhffnsArwxpfyne9"
-            class="header-up__link link"
-            >Вул. Соборності 33 (Буд. Главпочтамта)
-            <svg class="header-up__address-icon" width="17" height="17">
-              <use href="./images/icons.svg#icon-address"></use>
-            </svg>
-          </a>
-          <ul class="header-up__phonelist list">
-            <li class="header-up__phones_item">
-              <a href="tel:+380501111111" class="header-up__link link">
-                <svg class="header-up__phone-icon" width="10" height="16">
-                  <use href="./images/icons.svg#icon-smartphone"></use>
-                </svg>
-                +380 (50) 111 11 11</a
-              >
-            </li>
-            <li class="header-up__phones_item">
-              <a href="tel:+380501111111" class="header-up__link link">
-                <svg class="header-up__phone-icon" width="10" height="16">
-                  <use href="./images/icons.svg#icon-smartphone"></use>
-                </svg>
-                +380 (50) 111 11 11</a
-              >
-            </li>
-            <li class="header-up__phones_item">
-              <a href="tel:+380501111111" class="header-up__link link">
-                <svg class="header-up__phone-icon" width="10" height="16">
-                  <use href="./images/icons.svg#icon-smartphone"></use>
-                </svg>
-                +380 (50) 111 11 11</a
-              >
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="header-down">
-        <div class="container">
-          <a href="./index.html" class="header-down__logo-link">
-            <img
-              class="header-down__logo"
-              src="./images/header-logo_2x.png"
-              alt="Фото клініки"
-              width="150"
-              height="50"
-            />
-          </a>
-          <ul class="header-down__list list">
-            <li class="header-down__item">
-              <a href="index.html" class="header-down__link link current"
-                >Головна</a
-              >
-            </li>
-            <li class="header-down__item">
-              <a href="about-clinic.html" class="header-down__link link"
-                >Про клініку</a
-              >
-            </li>
-            <li class="header-down__item">
-              <a href="doctors.html" class="header-down__link link">Лікарі</a>
-            </li>
-            <li class="header-down__item">
-              <a href="gallery.html" class="header-down__link link">Галерея</a>
-            </li>
-            <li class="header-down__item">
-              <a href="services.html" class="header-down__link link">Послуги</a>
-            </li>
-            <li class="header-down__item">
-              <a href="contacts.html" class="header-down__link link"
-                >Контакти</a
-              >
-            </li>
-          </ul>
-          <a href="./doctors.html" class="header-down__reference link pointer"
-            >Запис на прийом</a
-          >
-          <button
-            type="button"
-            class="header-menu__button pointer"
-            aria-expanded="false"
-            aria-controls="menu"
-            data-menu-button
-          >
-            <svg
-              class="header-menu__icon"
-              width="40px"
-              height="40px"
-              aria-label="Переключатель мобильного меню"
+      <div class="container">
+        <a href="./index.html" class="header__logo-link">
+          <img
+            class="header__logo"
+            src="./images/Avicenna Clinic logo.jpg"
+            alt="Фото клініки"
+            width="100"
+            height="50"
+          />
+        </a>
+        <ul class="header__pagelist list">
+          <li class="header__pagelist-item">
+            <a href="index.html" class="header__pagelist-link link current"
+              >Головна</a
             >
-              <use
-                class="header-menu__burger"
-                href="./images/icons.svg#icon-menu-burger"
-              ></use>
-              <use
-                class="header-menu__cross"
-                href="./images/icons.svg#icon-menu-closer"
-              ></use>
-            </svg>
-          </button>
-        </div>
+          </li>
+          <li class="header__pagelist-item">
+            <a href="services.html" class="header__pagelist-link link"
+              >Послуги</a
+            >
+          </li>
+          <li class="header__pagelist-item">
+            <a href="prices.html" class="header__pagelist-link link">Ціни</a>
+          </li>
+          <li class="header__pagelist-item">
+            <a href="doctors.html" class="header__pagelist-link link">Лікарі</a>
+          </li>
+          <li class="header__pagelist-item">
+            <a href="gallery.html" class="header__pagelist-link link"
+              >Галерея</a
+            >
+          </li>
+          <li class="header__pagelist-item">
+            <a href="contacts.html" class="header__pagelist-link link"
+              >Контакти</a
+            >
+          </li>
+        </ul>
+        <ul class="header__contactlist list">
+          <li class="header__contactlist-item">
+            <a href="tel:+380505370059" class="header__contactlist-link link">
+              <svg class="header__contactlist-icon" width="10" height="16">
+                <use href="./images/icons.svg#icon-smartphone"></use>
+              </svg>
+              +380 (50) 537 00 59</a
+            >
+          </li>
+          <li class="header__contactlist-item">
+            <a
+              href="https://maps.app.goo.gl/UGhffnsArwxpfyne9"
+              class="header__contactlist-link link"
+            >
+              <svg class="header__contactlist-icon" width="17" height="17">
+                <use href="./images/icons.svg#icon-address"></use>
+              </svg>
+              Вул. Соборності 33
+            </a>
+          </li>
+        </ul>
+        <button
+          type="button"
+          class="header-menu__button pointer"
+          aria-expanded="false"
+          aria-controls="menu"
+          data-menu-button
+        >
+          <svg
+            class="header-menu__icon"
+            width="40px"
+            height="40px"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use
+              class="header-menu__burger"
+              href="./images/icons.svg#icon-menu-burger"
+            ></use>
+            <use
+              class="header-menu__cross"
+              href="./images/icons.svg#icon-menu-closer"
+            ></use>
+          </svg>
+        </button>
       </div>
       <div class="header-menu" id="menu" data-menu>
         <div class="header-menu__container">
@@ -144,9 +124,14 @@
               </li>
               <li class="header-menu__item">
                 <a
-                  href="./about-clinic.html"
+                  href="./services.html"
                   class="header-menu__pagelist-link link"
-                  >Про клініку</a
+                  >Послуги</a
+                >
+              </li>
+              <li class="header-menu__item">
+                <a href="./prices.html" class="header-menu__pagelist-link link"
+                  >Ціни</a
                 >
               </li>
               <li class="header-menu__item">
@@ -161,13 +146,6 @@
               </li>
               <li class="header-menu__item">
                 <a
-                  href="./services.html"
-                  class="header-menu__pagelist-link link"
-                  >Послуги</a
-                >
-              </li>
-              <li class="header-menu__item">
-                <a
                   href="./contacts.html"
                   class="header-menu__pagelist-link link"
                   >Контакти</a
@@ -177,37 +155,18 @@
             <ul class="header-menu__phonelist list">
               <li class="header-menu__phonelist-item">
                 <a
-                  href="tel:+380501111111"
+                  href="tel:+380505370059"
                   class="header-menu__phonelist-link link"
                 >
-                  +380 (50) 111 11 11</a
-                >
-              </li>
-              <li class="header-menu__phonelist-item">
-                <a
-                  href="tel:+380501111111"
-                  class="header-menu__phonelist-link link"
-                >
-                  +380 (50) 111 11 11
-                </a>
-              </li>
-              <li class="header-menu__phonelist-item">
-                <a
-                  href="tel:+380501111111"
-                  class="header-menu__phonelist-link link"
-                >
-                  +380 (50) 111 11 11</a
+                  +380 (50) 537 00 59</a
                 >
               </li>
             </ul>
             <a
               href="https://maps.app.goo.gl/UGhffnsArwxpfyne9"
               class="header-menu__address-link link"
-              >Вул. Соборності 33 (Буд. Главпочтамта)
+              >Вул. Соборності 33
             </a>
-            <a href="./doctors.html" class="header-menu__reference link pointer"
-              >Запис на прийом</a
-            >
           </div>
         </div>
       </div>
@@ -218,68 +177,14 @@
     <main>
       <section class="mp-hero mp-hero__overlay">
         <div class="container">
-          <h1 class="mp-hero__title">Клініка Avicenna</h1>
-        </div>
-      </section>
-
-      <!-- ==============================ABOUT============================== -->
-
-      <section class="mp-about">
-        <div class="container">
-          <h2 class="mp-about__title">Про нас</h2>
-          <div class="mp-about__wrap">
-            <picture>
-              <source
-                srcset="
-                  ./images/main-page/about_1x.jpg 1x,
-                  ./images/main-page/about_2x.jpg 2x
-                "
-                media="(min-width: 1440px)"
-              />
-              <img
-                class="mp-about__image"
-                src="./images/main-page/about_2x.jpg"
-                alt="Фото клініки"
-                width="640"
-                height="360"
-              />
-            </picture>
-            <div class="mp-about__info">
-              <h2 class="mp-about__subtitle">Клініка Avicenna</h2>
-              <p class="mp-about__text-big">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae,
-                amet voluptatem sint tenetur aut libero provident nostrum porro
-                excepturi illum et architecto inventore ipsum reprehenderit
-                alias dolor quidem nemo officia. Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Vitae, amet voluptatem sint
-                tenetur aut libero provident nostrum porro excepturi illum.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae,
-                amet voluptatem sint tenetur aut libero provident nostrum porro
-                excepturi illum et architecto inventore ipsum reprehenderit
-                alias dolor quidem nemo officia. Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Vitae, amet voluptatem sint
-                tenetur aut libero provident nostrum porro excepturi illum.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae,
-                amet voluptatem sint tenetur aut libero provident nostrum porro
-                excepturi illum et architecto inventore ipsum reprehenderit
-                alias dolor quidem nemo officia lorem ipsum.
-              </p>
-              <p class="mp-about__text-small">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae,
-                amet voluptatem sint tenetur aut libero provident nostrum porro
-                excepturi illum et architecto inventore ipsum reprehenderit
-                alias dolor quidem nemo officia. Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Vitae, amet voluptatem sint
-                tenetur aut libero provident nostrum porro excepturi illum.
-                Lorem ipsum dolor sit amet consectetur adipisicing
-                elit...&nbsp<a
-                  class="mp-about__text-link link"
-                  href="./about-clinic.html"
-                  >Читати далі</a
-                >
-              </p>
-            </div>
-          </div>
+          <h1 class="mp-hero__logo">
+            <img src="./images/Avicenna Clinic logo.jpg" alt="Логотип" />
+          </h1>
+          <p class="mp-hero__text">
+            Центр прогресивної медицини. Багатопрофільний медичний заклад.
+            Облаштований сучасним обладнанням. Головна місія - допомогти
+            вилікуватися від різних недуг і зберегти міцне здоров'я.
+          </p>
         </div>
       </section>
 
@@ -293,153 +198,100 @@
               <picture>
                 <source
                   srcset="
-                    ./images/main-page/services1_1x.jpg 1x,
-                    ./images/main-page/services1_2x.jpg 2x
+                    ./images/main-page/services1-1x.jpg 1x,
+                    ./images/main-page/services1-2x.jpg 2x
                   "
                   media="(min-width: 1440px)"
                 />
                 <img
                   class="mp-services__image"
-                  src="./images/main-page/services1_2x.jpg"
+                  src="./images/main-page/services1-2x.jpg"
                   alt="Послуга 1"
                   width="400"
                   height="300"
                 />
               </picture>
-              <h2 class="mp-services__subtitle">Назва послуги</h2>
+              <h2 class="mp-services__subtitle">Виклик спеціалістів додому</h2>
               <p class="mp-services__text">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic,
-                voluptatibus tempora autem quas atque voluptates officia id!
-                Voluptatum autem quod provident est. Non nobis quasi magnam
-                laborum autem distinctio dolores!
+                Дерматовенеролог, Невролог, Терапевт (кардіолог, ендокринолог)
               </p>
             </div>
             <div class="mp-services__item">
               <picture>
                 <source
                   srcset="
-                    ./images/main-page/services2_1x.jpg 1x,
-                    ./images/main-page/services2_2x.jpg 2x
+                    ./images/main-page/services2-1x.jpg 1x,
+                    ./images/main-page/services2-2x.jpg 2x
                   "
                   media="(min-width: 1440px)"
                 />
                 <img
                   class="mp-services__image"
-                  src="./images/main-page/services2_2x.jpg"
+                  src="./images/main-page/services2-2x.jpg"
                   alt="Послуга 2"
                   width="400"
                   height="300"
                 />
               </picture>
-              <h2 class="mp-services__subtitle">Назва послуги</h2>
+              <h2 class="mp-services__subtitle">Цифрова дерматоскопія</h2>
               <p class="mp-services__text">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic,
-                voluptatibus tempora autem quas atque voluptates officia id!
-                Voluptatum autem quod provident est. Non nobis quasi magnam
-                laborum autem distinctio dolores!
+                Найбільш сучасний і ефективний метод діагностики новоутворень
+                шкіри. Дерматоскопія дозволяє диференціювати тип пухлини
+                (доброякісний це чи злоякісний новоутвір), а також обстежити
+                інші захворювання шкіри і провести діагностику бородавок,
+                папілом, пігментних невусів.
               </p>
             </div>
             <div class="mp-services__item">
               <picture>
                 <source
                   srcset="
-                    ./images/main-page/services3_1x.jpg 1x,
-                    ./images/main-page/services3_2x.jpg 2x
+                    ./images/main-page/services3-1x.jpg 1x,
+                    ./images/main-page/services3-2x.jpg 2x
                   "
                   media="(min-width: 1440px)"
                 />
                 <img
                   class="mp-services__image"
-                  src="./images/main-page/services3_2x.jpg"
+                  src="./images/main-page/services3-2x.jpg"
                   alt="Послуга 3"
                   width="400"
                   height="300"
                 />
               </picture>
-              <h2 class="mp-services__subtitle">Назва послуги</h2>
+              <h2 class="mp-services__subtitle">Перкусійний масаж</h2>
               <p class="mp-services__text">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic,
-                voluptatibus tempora autem quas atque voluptates officia id!
-                Voluptatum autem quod provident est. Non nobis quasi magnam
-                laborum autem distinctio dolores!
+                Новітній метод глибокого масажу тканин усього тіла, що знімає
+                напругу, допомагає розслабити м'язи, зняти біль і скутість.
+                Завдяки багатофункціональній здатності можливо застосовувати на
+                будь-яких зонах тіла і в такий спосіб домагатися максимальної
+                ефективності.
               </p>
             </div>
             <div class="mp-services__item">
               <picture>
                 <source
                   srcset="
-                    ./images/main-page/services4_1x.jpg 1x,
-                    ./images/main-page/services4_2x.jpg 2x
+                    ./images/main-page/services4-1x.jpg 1x,
+                    ./images/main-page/services4-2x.jpg 2x
                   "
                   media="(min-width: 1440px)"
                 />
                 <img
                   class="mp-services__image"
-                  src="./images/main-page/services4_2x.jpg"
+                  src="./images/main-page/services4-2x.jpg"
                   alt="Послуга 3"
                   width="400"
                   height="300"
                 />
               </picture>
-              <h2 class="mp-services__subtitle">Назва послуги</h2>
-              <p class="mp-services__text">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic,
-                voluptatibus tempora autem quas atque voluptates officia id!
-                Voluptatum autem quod provident est. Non nobis quasi magnam
-                laborum autem distinctio dolores!
-              </p>
-            </div>
-            <div class="mp-services__item">
-              <picture>
-                <source
-                  srcset="
-                    ./images/main-page/services5_1x.jpg 1x,
-                    ./images/main-page/services5_2x.jpg 2x
-                  "
-                  media="(min-width: 1440px)"
-                />
-                <img
-                  class="mp-services__image"
-                  src="./images/main-page/services5_2x.jpg"
-                  alt="Послуга 3"
-                  width="400"
-                  height="300"
-                />
-              </picture>
-              <h2 class="mp-services__subtitle">Назва послуги</h2>
-              <p class="mp-services__text">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic,
-                voluptatibus tempora autem quas atque voluptates officia id!
-                Voluptatum autem quod provident est. Non nobis quasi magnam
-                laborum autem distinctio dolores!
-              </p>
-            </div>
-            <div class="mp-services__item">
-              <picture>
-                <source
-                  srcset="
-                    ./images/main-page/services6_1x.jpg 1x,
-                    ./images/main-page/services6_2x.jpg 2x
-                  "
-                  media="(min-width: 1440px)"
-                />
-                <img
-                  class="mp-services__image"
-                  src="./images/main-page/services6_2x.jpg"
-                  alt="Послуга 3"
-                  width="400"
-                  height="300"
-                />
-              </picture>
-              <h2 class="mp-services__subtitle">Назва послуги</h2>
-              <p class="mp-services__text">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic,
-                voluptatibus tempora autem quas atque voluptates officia id!
-                Voluptatum autem quod provident est. Non nobis quasi magnam
-                laborum autem distinctio dolores!
-              </p>
+              <h2 class="mp-services__subtitle">Лабораторія</h2>
+              <p class="mp-services__text">Опис послуги</p>
             </div>
           </div>
+          <a href="services.html" class="mp-services__link link"
+            >Показати усі послуги -></a
+          >
         </div>
       </section>
 
@@ -608,25 +460,6 @@
           </ul>
         </div>
       </section>
-
-      <!-- ==============================PARTNERS============================== -->
-
-      <section class="mp-partners">
-        <div class="container">
-          <h2 class="mp-partners__title">Наші партнери</h2>
-          <ul class="mp-partners__list list">
-            <li class="mp-partners__item">
-              <img src="./images/main-page/partners1.png" alt="" />
-            </li>
-            <li class="mp-partners__item">
-              <img src="./images/main-page/partners1.png" alt="" />
-            </li>
-            <li class="mp-partners__item">
-              <img src="./images/main-page/partners1.png" alt="" />
-            </li>
-          </ul>
-        </div>
-      </section>
     </main>
 
     <!-- ==============================FOOTER============================== -->
@@ -635,45 +468,25 @@
       <div class="container">
         <div class="footer-contacts__wrap">
           <p class="footer-title">Наші контакти</p>
-          <ul class="footer-contacts__list list">
-            <li class="footer-contacts__item">
+          <ul class="footer__contactlist list">
+            <li class="footer__contactlist-item">
+              <a href="tel:+380505370059" class="footer__contactlist-link link">
+                <svg class="footer__contactlist-icon" width="10" height="16">
+                  <use href="./images/icons.svg#icon-smartphone"></use>
+                </svg>
+                +380 (50) 537 00 59</a
+              >
+            </li>
+            <li class="footer__contactlist-item">
               <a
                 href="https://maps.app.goo.gl/UGhffnsArwxpfyne9"
-                class="footer-contacts__link link"
+                class="footer__contactlist-link link"
               >
-                <svg
-                  class="footer-contacts__address-icon"
-                  width="17"
-                  height="17"
-                >
+                <svg class="footer__contactlist-icon" width="17" height="17">
                   <use href="./images/icons.svg#icon-address"></use>
                 </svg>
-                Вул. Соборності 33</a
-              >
-            </li>
-            <li class="footer-contacts__item">
-              <a href="tel:+380501111111" class="footer-contacts__link link">
-                <svg class="footer-contacts__phone-icon" width="10" height="16">
-                  <use href="./images/icons.svg#icon-smartphone"></use>
-                </svg>
-                +380 (50) 111 11 11</a
-              >
-            </li>
-            <li class="footer-contacts__item">
-              <a href="tel:+380501111111" class="footer-contacts__link link">
-                <svg class="footer-contacts__phone-icon" width="10" height="16">
-                  <use href="./images/icons.svg#icon-smartphone"></use>
-                </svg>
-                +380 (50) 111 11 11</a
-              >
-            </li>
-            <li class="footer-contacts__item">
-              <a href="tel:+380501111111" class="footer-contacts__link link">
-                <svg class="footer-contacts__phone-icon" width="10" height="16">
-                  <use href="./images/icons.svg#icon-smartphone"></use>
-                </svg>
-                +380 (50) 111 11 11</a
-              >
+                Вул. Соборності 33
+              </a>
             </li>
           </ul>
         </div>
@@ -687,25 +500,23 @@
                 >
               </li>
               <li class="footer-pages__item">
-                <a href="./about-clinic.html" class="footer-pages__link link"
-                  >Про клініку</a
+                <a href="./services.html" class="footer-pages__link link"
+                  >Послуги</a
                 >
               </li>
+              <li class="footer-pages__item">
+                <a href="./prices.html" class="footer-pages__link link">Ціни</a>
+              </li>
+            </ul>
+            <ul class="footer-pages__list list">
               <li class="footer-pages__item">
                 <a href="./doctors.html" class="footer-pages__link link"
                   >Лікарі</a
                 >
               </li>
-            </ul>
-            <ul class="footer-pages__list list">
               <li class="footer-pages__item">
                 <a href="./gallery.html" class="footer-pages__link link"
                   >Галерея</a
-                >
-              </li>
-              <li class="footer-pages__item">
-                <a href="./services.html" class="footer-pages__link link"
-                  >Послуги</a
                 >
               </li>
               <li class="footer-pages__item">
@@ -721,9 +532,7 @@
 
     <!-- ==============================SCROLL-UP============================== -->
 
-    <a href="#header" class="to-top">
-      <i class="fas fa-chevron-up"></i>
-    </a>
+    <a href="#header" class="to-top">ВГОРУ </a>
 
     <!-- ==============================SCRIPTS============================== -->
     <script src="./js/header-menu.js"></script>

@@ -1,23 +1,7 @@
 .mp-hero {
-  --hero-bg: #c4c4c4;
-  padding-top: 140px;
-  padding-bottom: 140px;
-
-  margin-top: 60px;
-
-  @include tablet {
-    padding-top: 180px;
-    padding-bottom: 180px;
-  }
-  @include sm-desktop {
-    padding-top: 220px;
-    padding-bottom: 220px;
-    margin-top: 100px;
-  }
-  @include desktop {
-    padding-top: 260px;
-    padding-bottom: 260px;
-  }
+  padding-bottom: 40px;
+  margin-top: 85px;
+  border-bottom: rgb(211, 203, 203) 1px solid;
 }
 
 .mp-hero__overlay {
@@ -56,26 +40,49 @@
   }
 }
 
-.mp-hero__title {
+.mp-hero__logo {
   width: fit-content;
-
-  font-size: 30px;
-  font-weight: 700;
-  color: var(--bg-text-color);
-
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 
   @include mobile {
-    font-size: 40px;
+    width: 240px;
+    height: 120px;
   }
 
   @include tablet {
-    font-size: 50px;
-  }
-  @include sm-desktop {
-    font-size: 60px;
+    width: 300px;
+    height: 150px;
   }
   @include desktop {
-    font-size: 70px;
+    width: 450px;
+    height: 225px;
+  }
+}
+
+.mp-hero__text {
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 700;
+
+  color: var(--text-colour-black);
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 80px;
+
+  @include mobile {
+    font-size: 20px;
+  }
+
+  @include tablet {
+    font-size: 24px;
+  }
+  @include sm-desktop {
+    font-size: 32px;
+  }
+  @include desktop {
+    font-size: 36px;
   }
 }

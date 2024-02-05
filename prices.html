@@ -31,12 +31,14 @@
             <a href="index.html" class="header__pagelist-link link">Головна</a>
           </li>
           <li class="header__pagelist-item">
-            <a href="services.html" class="header__pagelist-link link current"
+            <a href="services.html" class="header__pagelist-link link"
               >Послуги</a
             >
           </li>
           <li class="header__pagelist-item">
-            <a href="prices.html" class="header__pagelist-link link">Ціни</a>
+            <a href="prices.html" class="header__pagelist-link link current"
+              >Ціни</a
+            >
           </li>
           <li class="header__pagelist-item">
             <a href="doctors.html" class="header__pagelist-link link">Лікарі</a>
@@ -109,16 +111,16 @@
             </li>
             <li class="header-menu__item">
               <a href="./services.html" class="header-menu__pagelist-link link"
-                >Послуги
+                >Послуги</a
+              >
+            </li>
+            <li class="header-menu__item">
+              <a href="./prices.html" class="header-menu__pagelist-link link"
+                >Ціни
                 <svg class="header-menu__current-icon" width="30" height="30">
                   <use href="./images/icons.svg#icon-mobile-current"></use>
                 </svg>
               </a>
-            </li>
-            <li class="header-menu__item">
-              <a href="./prices.html" class="header-menu__pagelist-link link"
-                >Ціни</a
-              >
             </li>
             <li class="header-menu__item">
               <a href="./doctors.html" class="header-menu__pagelist-link link"
@@ -155,108 +157,110 @@
       </div>
     </div>
 
-    <!-- =========================SERVICES=========================== -->
+    <!-- =========================PRICES=========================== -->
 
     <main>
-      <section class="services">
+      <section class="prices">
+        <h2 class="prices__title">НАШІ ЦІНИ</h2>
         <div class="container">
-          <h2 class="services__title">НАШІ ПОСЛУГИ</h2>
-          <ul class="services__list list">
-            <li class="services__item">
-              <picture>
-                <source
-                  srcset="
-                    ./images/services/services1-1x.jpg 1x,
-                    ./images/services/services1-2x.jpg 2x
-                  "
-                  media="(min-width: 1440px)"
-                />
-                <img
-                  class="mp-doctors__image"
-                  src="./images/services/services1-2x.jpg"
-                  alt=""
-                  width="300"
-                  height="300"
-                />
-              </picture>
-              <h2 class="services__subtitle">Виклик спеціалістів додому</h2>
-              <p class="services__text">
-                Дерматовенеролог, Невролог, Терапевт (кардіолог, ендокринолог)
-              </p>
-            </li>
-            <li class="services__item">
-              <picture>
-                <source
-                  srcset="
-                    ./images/services/services2-1x.jpg 1x,
-                    ./images/services/services2-2x.jpg 2x
-                  "
-                  media="(min-width: 1440px)"
-                />
-                <img
-                  class="services__image"
-                  src="./images/services/services2-2x.jpg"
-                  alt=""
-                  width="300"
-                  height="300"
-                />
-              </picture>
-              <h2 class="services__subtitle">Цифрова дерматоскопія</h2>
-              <p class="services__text">
-                Найбільш сучасний і ефективний метод діагностики новоутворень
-                шкіри. Дерматоскопія дозволяє диференціювати тип пухлини
-                (доброякісний це чи злоякісний новоутвір), а також обстежити
-                інші захворювання шкіри і провести діагностику бородавок,
-                папілом, пігментних невусів.
-              </p>
-            </li>
-            <li class="services__item">
-              <picture>
-                <source
-                  srcset="
-                    ./images/services/services3-1x.jpg 1x,
-                    ./images/services/services3-2x.jpg 2x
-                  "
-                  media="(min-width: 1440px)"
-                />
-                <img
-                  class="services__image"
-                  src="./images/services/services3-2x.jpg"
-                  alt=""
-                  width="300"
-                  height="300"
-                />
-              </picture>
-              <h2 class="services__subtitle">Перкусійний масаж</h2>
-              <p class="services__text">
-                Новітній метод глибокого масажу тканин усього тіла, що знімає
-                напругу, допомагає розслабити м'язи, зняти біль і скутість.
-                Завдяки багатофункціональній здатності можливо застосовувати на
-                будь-яких зонах тіла і в такий спосіб домагатися максимальної
-                ефективності.
-              </p>
-            </li>
-            <li class="services__item">
-              <picture>
-                <source
-                  srcset="
-                    ./images/services/services4-1x.jpg 1x,
-                    ./images/services/services4-2x.jpg 2x
-                  "
-                  media="(min-width: 1440px)"
-                />
-                <img
-                  class="services__image"
-                  src="./images/services/services4-2x.jpg.jpg"
-                  alt=""
-                  width="300"
-                  height="300"
-                />
-              </picture>
-              <h2 class="services__subtitle">Лабораторія</h2>
-              <p class="services__text">Опис послуги</p>
-            </li>
-          </ul>
+          <div class="prices__wrap">
+            <div class="prices__block">
+              <ul class="prices__list list">
+                <li class="prices__item">
+                  <p class="prices__text">Послуга</p>
+                  <p class="prices__text">100 грн.</p>
+                </li>
+                <li class="prices__item">
+                  <p class="prices__text">Послуга</p>
+                  <p class="prices__text">100 грн.</p>
+                </li>
+                <li class="prices__item">
+                  <p class="prices__text">Послуга</p>
+                  <p class="prices__text">100 грн.</p>
+                </li>
+                <li class="prices__item">
+                  <p class="prices__text">Послуга</p>
+                  <p class="prices__text">100 грн.</p>
+                </li>
+                <li class="prices__item">
+                  <p class="prices__text">Послуга</p>
+                  <p class="prices__text">100 грн.</p>
+                </li>
+                <li class="prices__item">
+                  <p class="prices__text">Послуга</p>
+                  <p class="prices__text">100 грн.</p>
+                </li>
+                <li class="prices__item">
+                  <p class="prices__text">Послуга</p>
+                  <p class="prices__text">100 грн.</p>
+                </li>
+                <li class="prices__item">
+                  <p class="prices__text">Послуга</p>
+                  <p class="prices__text">100 грн.</p>
+                </li>
+                <li class="prices__item">
+                  <p class="prices__text">Послуга</p>
+                  <p class="prices__text">100 грн.</p>
+                </li>
+                <li class="prices__item">
+                  <p class="prices__text">Послуга</p>
+                  <p class="prices__text">100 грн.</p>
+                </li>
+                <li class="prices__item">
+                  <p class="prices__text">Послуга</p>
+                  <p class="prices__text">100 грн.</p>
+                </li>
+              </ul>
+            </div>
+            <div class="prices__block">
+              <ul class="prices__list list">
+                <li class="prices__item">
+                  <p class="prices__text">Послуга</p>
+                  <p class="prices__text">100 грн.</p>
+                </li>
+                <li class="prices__item">
+                  <p class="prices__text">Послуга</p>
+                  <p class="prices__text">100 грн.</p>
+                </li>
+                <li class="prices__item">
+                  <p class="prices__text">Послуга</p>
+                  <p class="prices__text">100 грн.</p>
+                </li>
+                <li class="prices__item">
+                  <p class="prices__text">Послуга</p>
+                  <p class="prices__text">100 грн.</p>
+                </li>
+                <li class="prices__item">
+                  <p class="prices__text">Послуга</p>
+                  <p class="prices__text">100 грн.</p>
+                </li>
+                <li class="prices__item">
+                  <p class="prices__text">Послуга</p>
+                  <p class="prices__text">100 грн.</p>
+                </li>
+                <li class="prices__item">
+                  <p class="prices__text">Послуга</p>
+                  <p class="prices__text">100 грн.</p>
+                </li>
+                <li class="prices__item">
+                  <p class="prices__text">Послуга</p>
+                  <p class="prices__text">100 грн.</p>
+                </li>
+                <li class="prices__item">
+                  <p class="prices__text">Послуга</p>
+                  <p class="prices__text">100 грн.</p>
+                </li>
+                <li class="prices__item">
+                  <p class="prices__text">Послуга</p>
+                  <p class="prices__text">100 грн.</p>
+                </li>
+                <li class="prices__item">
+                  <p class="prices__text">Послуга</p>
+                  <p class="prices__text">100 грн.</p>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
     </main>
@@ -331,7 +335,8 @@
 
     <!-- ==============================SCROLL-UP============================== -->
 
-    <a href="#header" class="to-top">ВГОРУ</a>
+    <a href="#header" class="to-top">ВГОРУ</i>
+    </a>
 
     <!-- =========================SCRIPTS=========================== -->
     <script src="./js/header-menu.js"></script>

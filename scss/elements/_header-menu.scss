@@ -7,7 +7,7 @@
 
   background-color: var(--bg-text-color);
 
-  z-index: 1;
+  z-index: 2;
 }
 
 .header-menu .header-menu__container {
@@ -119,24 +119,4 @@
 .header-menu__address-link {
   font-size: 20px;
   color: var(--main-title-color);
-}
-
-.header-menu__reference {
-  width: 200px;
-  height: 50px;
-
-  font-size: 18px;
-  font-weight: 700;
-  text-align: center;
-  text-decoration: none;
-
-  background-color: var(--button-color);
-  color: var(--main-title-color);
-
-  border: none;
-  border-radius: 5px;
-
-  padding: 14px;
-
-  margin: 0 auto;
 }

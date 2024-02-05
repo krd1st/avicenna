@@ -6,40 +6,24 @@
   }
 }
 
-.contacts-wrap {
+.contacts .container {
   display: flex;
-  align-items: center;
   flex-direction: column;
-  gap: 30px;
-
-  margin-bottom: 40px;
-
-  @include tablet {
-    flex-direction: row;
-    margin-bottom: 80px;
-  }
+  align-items: center;
 }
 
 .contacts__title {
   font-size: 32px;
   text-align: center;
-  color: var(--main-title-color);
+  color: var(--text-colour-black);
 
   margin-bottom: 40px;
-}
-
-.contacts-info__wrap {
-  width: 100%;
-
-  @include tablet {
-    width: calc((100% - 30px) / 2);
-  }
 }
 
 .contacts-info__title {
   text-align: center;
   font-size: 28px;
-  color: var(--main-title-color);
+  color: var(--text-colour-black);
   margin-bottom: 25px;
 
   @include tablet {
@@ -48,7 +32,8 @@
 }
 
 .contacts-info__text {
-  color: var(--second-title-color);
+  color: var(--text-colour-black);
+  text-align: center;
 
   margin-bottom: 40px;
 }
@@ -85,7 +70,7 @@
 
   font-size: 16px;
   font-weight: 500;
-  color: var(--second-title-color);
+  color: var(--text-colour-black);
 
   transition-property: color;
   transition-duration: 250ms;
@@ -104,167 +89,8 @@
   fill: currentColor;
 }
 
-.contacts-form__title {
-  text-align: center;
-  font-size: 28px;
-  color: var(--main-title-color);
-  margin-bottom: 28px;
-
-  @include tablet {
-    text-align: left;
-  }
-}
-
-// ======================================================= //
-
-// .contacts-form__wrapper {
-//   display: flex;
-//   flex-direction: column;
-// }
-
-// .contacts-form__input,
-// .contacts-form__question {
-//   margin-bottom: 30px;
-
-//   border-radius: 4px;
-//   border: 1px solid var(--second-title-color);
-
-//   transition-property: border;
-//   transition-duration: 250ms;
-//   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-//   outline: transparent;
-
-//   &:hover,
-//   &:focus {
-//     border: 1px solid var(--main-hover-focus-color);
-//   }
-// }
-
-// .contacts-form__input {
-//   height: 40px;
-//   padding-left: 5px;
-// }
-
-// .contacts-form__question {
-//   height: 100px;
-//   padding: 10px;
-// }
-
-// .contacts-form__button {
-//   display: block;
-
-//   width: 200px;
-//   height: 50px;
-
-//   font-size: 18px;
-//   font-weight: 700;
-//   text-align: center;
-//   text-decoration: none;
-
-//   background-color: var(--button-color);
-//   color: var(--main-title-color);
-
-//   border: none;
-//   border-radius: 5px;
-
-//   padding: 14px;
-//   margin: 0 auto;
-
-//   transition-property: background-color, box-shadow;
-//   transition-duration: 250ms;
-//   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-//   &:hover,
-//   &:focus {
-//     background-color: var(--button-hover-focus-color);
-//     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-//   }
-// }
-
-.form {
-  width: 100%;
-
-  @include tablet {
-    width: calc((100% - 30px) / 2);
-  }
-}
-
-.form-title {
-  text-align: center;
-  font-size: 28px;
-  color: var(--main-title-color);
-  margin-bottom: 25px;
-
-  @include tablet {
-    text-align: left;
-  }
-}
-
-.form-input {
-  width: 100%;
-  height: 40px;
-
-  padding-left: 10px;
-  margin-bottom: 24px;
-
-  border-radius: 4px;
-  border: 2px solid var(--second-title-color);
-
-  transition-property: border;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  outline: transparent;
-
-  &:hover,
-  &:focus {
-    border: 2px solid var(--main-hover-focus-color);
-  }
-}
-
-.form-input._error {
-  border: 2px solid red;
-}
-
-textarea.form-input {
-  min-height: 120px;
-  resize: vertical;
-  padding: 10px;
-}
-
-.form-button {
-  display: block;
-
-  width: 200px;
-  height: 50px;
-
-  font-size: 18px;
-  font-weight: 700;
-  text-align: center;
-  text-decoration: none;
-
-  background-color: var(--button-color);
-  color: var(--main-title-color);
-
-  border: none;
-  border-radius: 5px;
-
-  padding: 14px;
-  margin: 0 auto;
-
-  transition-property: background-color, box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-  &:hover,
-  &:focus {
-    background-color: var(--button-hover-focus-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  }
-}
-
-// ========================================================//
-
 .contacts-map iframe {
+  margin-top: 80px;
   width: 100%;
   height: 400px;
   margin-bottom: -5px;

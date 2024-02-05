@@ -1,62 +1,25 @@
 export const galleryItems = [
   {
-    preview: './images/gallery/gallery-preview1.jpg',
-    original: './images/gallery/gallery-full1.jpg',
-    description: 'Опис фотографії',
+    preview: './images/gallery/gallery-preview1.png',
+    original: './images/gallery/gallery-full1.png',
+    description:
+      'Виклик спеціалістів додому: Дерматовенеролог, Невролог, Терапевт (кардіолог, ендокринолог)',
   },
   {
-    preview: './images/gallery/gallery-preview2.jpg',
-    original: './images/gallery/gallery-full2.jpg',
-    description: 'Опис фотографії',
+    preview: './images/gallery/gallery-preview2.png',
+    original: './images/gallery/gallery-full2.png',
+    description: 'Лабораторія',
   },
   {
-    preview: './images/gallery/gallery-preview3.jpg',
-    original: './images/gallery/gallery-full3.jpg',
-    description: 'Опис фотографії',
+    preview: './images/gallery/gallery-preview3.png',
+    original: './images/gallery/gallery-full3.png',
+    description:
+      'Перкусійний масаж — це новітній метод глибокого масажу тканин усього тіла, що знімає напругу, допомагає розслабити м`язи та зняти біль і скутість. Завдяки багатофункціональній здатності можливо застосовувати на будь-яких зонах тіла і в такий спосіб домагатися максимальної ефективності.',
   },
   {
-    preview: './images/gallery/gallery-preview4.jpg',
-    original: './images/gallery/gallery-full4.jpg',
-    description: 'Опис фотографії',
-  },
-  {
-    preview: './images/gallery/gallery-preview5.jpg',
-    original: './images/gallery/gallery-full5.jpg',
-    description: 'Опис фотографії',
-  },
-  {
-    preview: './images/gallery/gallery-preview6.jpg',
-    original: './images/gallery/gallery-full6.jpg',
-    description: 'Опис фотографії',
-  },
-  {
-    preview: './images/gallery/gallery-preview7.jpg',
-    original: './images/gallery/gallery-full7.jpg',
-    description: 'Опис фотографії',
-  },
-  {
-    preview: './images/gallery/gallery-preview8.jpg',
-    original: './images/gallery/gallery-full8.jpg',
-    description: 'Опис фотографії',
-  },
-  {
-    preview: './images/gallery/gallery-preview9.jpg',
-    original: './images/gallery/gallery-full9.jpg',
-    description: 'Опис фотографії',
-  },
-  {
-    preview: './images/gallery/gallery-preview10.jpg',
-    original: './images/gallery/gallery-full10.jpg',
-    description: 'Опис фотографії',
-  },
-  {
-    preview: './images/gallery/gallery-preview11.jpg',
-    original: './images/gallery/gallery-full11.jpg',
-    description: 'Опис фотографії',
-  },
-  {
-    preview: './images/gallery/gallery-preview12.jpg',
-    original: './images/gallery/gallery-full12.jpg',
-    description: 'Опис фотографії',
+    preview: './images/gallery/gallery-preview4.png',
+    original: './images/gallery/gallery-full4.png',
+    description:
+      'Цифрова дерматоскопія є найбільш сучасним і ефективним методом діагностики новоутворень шкіри. Дерматоскопія дозволяє диференціювати тип пухлини( доброякісний це чи злоякісний новоутвір), а також обстежити інші захворювання шкіри і провести діагностику бородавок, папілом, пігментних невусів.',
   },
 ];

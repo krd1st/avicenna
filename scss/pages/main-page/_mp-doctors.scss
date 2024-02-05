@@ -1,6 +1,7 @@
 .mp-doctors {
   padding-top: 80px;
   padding-bottom: 80px;
+  background-color: var(--page-colour-black);
 }
 
 .mp-doctors .container {
@@ -19,7 +20,8 @@
 
 .mp-doctors__title {
   font-size: 32px;
-  color: var(--main-title-color);
+  // color: var(--main-title-color);
+  color: var(--text-colour-white);
   margin-bottom: 40px;
 }
 
@@ -91,7 +93,7 @@
 
 .mp-doctors__link {
   font-size: 20px;
-  color: var(--main-title-color);
+  color: var(--text-colour-white);
   font-weight: 500;
 
   transition-property: color;
@@ -107,9 +109,9 @@
     font-size: 24px;
     font-weight: 700;
   }
-}
 
-.mp-doctors__link:hover,
-.mp-doctors__link:focus {
-  color: var(--main-hover-focus-color);
+  &:hover,
+  &:focus {
+    color: var(--main-hover-focus-color);
+  }
 }

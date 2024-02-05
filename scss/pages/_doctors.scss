@@ -47,9 +47,11 @@
   max-width: 630px;
   height: auto;
 
-  background-color: rgb(225, 240, 225);
+  // background-color: rgb(225, 240, 225);
+  background-color: var(--page-colour-white);
   box-shadow: var(--card-box-shadow);
-  border-radius: 0px 0px 4px 4px;
+  border: var(--page-colour-black) solid 3px;
+  border-radius: 4px 4px 10px 10px;
 
   padding: 15px;
 
@@ -96,7 +98,7 @@
 
   text-align: center;
 
-  background-color: var(--second-hover-focus-color);
+  background-color: var(--text-colour-black);
   color: #ffffff;
 
   border: none;

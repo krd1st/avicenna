@@ -1,7 +1,15 @@
 :root {
-  --main-title-color: #212121;
+  --page-colour-white: #ffffff;
+  --page-colour-black: #000000;
+
+  --text-colour-white: #ffffff;
+  --text-colour-lightgrey: #757575;
+
+  --text-colour-black: #000000;
+
+  // --main-title-color: #212121;
   --second-title-color: #757575;
-  --bg-text-color: #ffffff;
+  // --bg-text-color: #ffffff;
 
   --main-hover-focus-color: #2196f3;
   --second-hover-focus-color: #188ce8;
@@ -18,8 +26,12 @@
     0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 
   --hero-bg: #c4c4c4;
+  // --hero-gradient: linear-gradient(
+  //   rgba(47, 48, 58, 0.6),
+  //   rgba(47, 48, 58, 0.6)
+  // );
   --hero-gradient: linear-gradient(
-    rgba(47, 48, 58, 0.6),
-    rgba(47, 48, 58, 0.6)
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 1)
   );
 }
